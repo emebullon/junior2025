@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rankings - FEB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+    <div class="loader-text">Cargando estadísticas...</div>
+    <div class="progress-bar">
+      <div class="progress-bar-fill"></div>
+    </div>
+  </div>
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <img 
+        src="https://raw.githubusercontent.com/emebullon/mini2025/refs/heads/main/planeta%20mini%20logo%20mosca.svg" 
+        alt="Logo FEB" 
+        class="logo"
+      >
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/home-outline.svg" alt="Icono Inicio">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="partidos.html">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/basketball-outline.svg" alt="Icono Partidos">
+              <span>Partidos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/newspaper-outline.svg" alt="Icono Noticias">
+              <span>Noticias</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/calendar-outline.svg" alt="Icono Calendario">
+              <span>Calendario</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="rankings.html">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/stats-chart-outline.svg" alt="Icono Rankings">
+              <span>Rankings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/add.svg" alt="Icono Más">
+              <span>Más</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="#">
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/log-in.svg" 
+          alt="Icono Usuario" 
+          class="icon"
+        >
+      </a>
+      <a href="#">
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/search.svg" 
+          alt="Icono Búsqueda" 
+          class="icon"
+        >
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <h1 class="section-title" style="text-align: center; margin-bottom: 20px;">Rankings</h1>
+
+    <!-- FILTROS -->
+    <div class="stats-filters">
+      <select id="filterCompetition">
+        <option value="">-- Competición --</option>
+      </select>
+      <select id="filterRound">
+        <option value="">-- Fase --</option>
+      </select>
+      <select id="filterTeam">
+        <option value="">-- Equipo --</option>
+      </select>
+      <select id="filterGender">
+        <option value="">-- Género --</option>
+        <option value="H">Hombres</option>
+        <option value="M">Mujeres</option>
+      </select>
+      <input type="text" id="searchPlayerTeam" placeholder="Buscar equipo o jugador...">
+      <div class="toggle-container">
+        <span>Totales</span>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle">
+          <span class="slider round"></span>
+        </label>
+        <span>Promedios</span>
+      </div>
+      <button id="btnApplyFilters">Aplicar Filtros</button>
+    </div>
+
+    <!-- TABLA -->
+    <div class="stats-table-container">
+      <button class="mobile-columns-toggle" id="toggleColumns">Mostrar más columnas</button>
+      <table class="stats-table" id="statsTable">
+        <thead>
+          <tr>
+            <th data-col="rank" title="Posición en el ranking">#</th>
+            <th data-col="dorsal" title="Número de dorsal del jugador">Dorsal</th>
+            <th data-col="playerPhoto" title="Fotografía del jugador">Foto</th>
+            <th data-col="playerName" title="Nombre completo del jugador">Jugador</th>
+            <th data-col="teamName" title="Nombre del equipo">Equipo</th>
+            <th data-col="min" title="Minutos jugados">MIN</th>
+            <th data-col="pts" title="Puntos totales anotados">PTS</th>
+            <th data-col="t2c" title="Tiros de 2 puntos convertidos">T2C</th>
+            <th data-col="t2i" title="Tiros de 2 puntos intentados">T2I</th>
+            <th data-col="pct2" title="Porcentaje de acierto en tiros de 2 puntos">%T2</th>
+            <th data-col="t3c" title="Tiros de 3 puntos convertidos">T3C</th>
+            <th data-col="t3i" title="Tiros de 3 puntos intentados">T3I</th>
+            <th data-col="pct3" title="Porcentaje de acierto en tiros de 3 puntos">%T3</th>
+            <th data-col="tlc" title="Tiros libres convertidos">TLC</th>
+            <th data-col="tli" title="Tiros libres intentados">TLI</th>
+            <th data-col="pctTl" title="Porcentaje de acierto en tiros libres">%TL</th>
+            <th data-col="ro" title="Rebotes ofensivos">RO</th>
+            <th data-col="rd" title="Rebotes defensivos">RD</th>
+            <th data-col="rt" title="Rebotes totales">RT</th>
+            <th data-col="as" title="Asistencias">AS</th>
+            <th data-col="br" title="Balones recuperados">BR</th>
+            <th data-col="bp" title="Balones perdidos">BP</th>
+            <th data-col="tp" title="Tapones">TP</th>
+            <th data-col="fc" title="Faltas cometidas">FC</th>
+            <th data-col="va" title="Valoración">VA</th>
+            <th data-col="pm" title="Plus/Minus: Diferencia de puntos del equipo con el jugador en pista">+/-</th>
+            <th data-col="games" title="Número de partidos jugados">Part.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Se rellena dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Paginación -->
+    <div class="pagination-controls">
+      <button id="prevPageBtn">Anterior</button>
+      <span id="pageInfo"></span>
+      <button id="nextPageBtn">Siguiente</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Federación Española de Baloncesto</p>
+  </footer>
+
+  <script src="rankings.js"></script>
+<!-- FOOTER -->
+<footer class="feb-footer">
+  <div class="footer-container">
+    <!-- Sección izquierda: logo y un texto breve -->
+    <div class="footer-left">
+      <img 
+        src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/logofeb.svg" 
+        alt="Logo FEB" 
+        class="footer-logo"
+      >
+      <p class="footer-text">
+        Regístrate para recibir las últimas noticias de nuestro equipo.
+        <br>
+        <a href="#" class="footer-link">Más info &raquo;</a>
+      </p>
+      <div class="footer-social">
+        <p>Síguenos en redes:</p>
+        <!-- Ejemplo de iconos (FontAwesome o similares) -->
+        <a href="#" class="social-icon">FB</a>
+        <a href="#" class="social-icon">TW</a>
+        <a href="#" class="social-icon">IG</a>
+      </div>
+    </div>
+
+    <!-- Sección central: Links -->
+    <div class="footer-middle">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Fotos</a></li>
+        <li><a href="#">Vídeos</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección derecha: patrocinadores -->
+    <div class="footer-right">
+      <h3>Patrocinadores Oficiales</h3>
+      <div class="partner-logos">
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/niker.png" 
+          alt="Nike" 
+          class="partner-logo"
+        >
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/endesa.png" 
+          alt="Endesa" 
+          class="partner-logo"
+        >
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/azul.png" 
+          alt="Azul Marino" 
+          class="partner-logo"
+        >
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/tenerife.png" 
+          alt="Tenerife" 
+          class="partner-logo"
+        >
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/iberia.png" 
+          alt="Iberia" 
+          class="partner-logo"
+        >
+         <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/caixa.png" 
+          alt="CaixaBank" 
+          class="partner-logo"
+        >
+        <!-- Agrega más logos si lo deseas -->
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      © 2025 Federación Española de Baloncesto. Todos los derechos reservados.
+      <br>
+      <a href="#">Política de privacidad</a> | 
+      <a href="#">Términos y condiciones</a> | 
+      <a href="#">Cookies</a>
+    </p>
+  </div>
+</footer>
+  
+</body>
+</html>

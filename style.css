@@ -1,0 +1,1023 @@
+/* RESET Y BÁSICOS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #2F4170, #111C4E);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #FF9E1B;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #2F4170, #111C4E);
+  padding: 10px 20px;
+  border-bottom: 1px solid #53565A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+.header-left nav {
+  flex: 1;          /* Ocupa el espacio disponible */
+  margin: 0 auto;   /* Centra el nav dentro de header-left */
+}
+.header-left nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center; /* Centra los ítems del menú */
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  height: 80px;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.nav-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #ffffff;
+}
+.nav-item img,
+.icon {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s ease-in-out;
+}
+.nav-item:hover img,
+.icon:hover {
+  filter: brightness(1.2) invert(1);
+}
+.nav-item.active img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(100%) saturate(2637%) hue-rotate(358deg) brightness(102%) contrast(101%);
+}
+.nav-item.active span {
+  color: #FF9E1B;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  width: 98%; /* Cambiado de max-width a width */
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.section-title {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* FILTROS */
+.stats-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.stats-filters select,
+.stats-filters input {
+  padding: 8px 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #111C4E;
+}
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #FF9E1B;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #FF9E1B;
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.stats-filters button {
+  padding: 8px 16px;
+  background-color: #FF9E1B;
+  color: #111C4E;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.stats-filters button:hover {
+  background-color: #C8102E;
+  color: #fff;
+}
+
+/* Estilos para los grupos en los selects */
+.stats-filters select optgroup {
+  font-weight: bold;
+  color: #111C4E;
+  background-color: #f5f5f5;
+}
+
+.stats-filters select option {
+  font-weight: normal;
+  color: #111C4E;
+  background-color: #fff;
+  padding: 5px;
+}
+
+/* TABLA */
+.stats-table-container {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  max-height: 80vh;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #111C4E;
+  background-color: #fff;
+}
+
+/* Encabezado - siempre por encima */
+.stats-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.stats-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+  padding: 12px 4px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Celdas del cuerpo - sin z-index */
+.stats-table tbody td {
+  padding: 8px 4px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+/* Indicadores de ordenación */
+.stats-table thead th {
+  position: relative;
+  padding-right: 20px !important;
+}
+
+.stats-table thead th::after {
+  content: attr(title);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #111C4E;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 4px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 20;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  pointer-events: none;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Flecha del tooltip */
+.stats-table thead th::before {
+  content: '↕';
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 12px;
+}
+
+.stats-table thead th.sorted-asc::before {
+  content: '↑';
+  color: #FF9E1B;
+}
+
+.stats-table thead th.sorted-desc::before {
+  content: '↓';
+  color: #FF9E1B;
+}
+
+/* Alineación de nombres de jugadores */
+.stats-table td[data-col="playerName"] {
+  text-align: left !important;
+  padding-left: 10px !important;
+}
+
+/* Ajuste para tooltips que se salen de la pantalla */
+.stats-table thead th:first-child::after,
+.stats-table thead th:nth-child(2)::after,
+.stats-table thead th:nth-child(3)::after {
+  left: 0;
+  transform: none;
+}
+
+.stats-table thead th:last-child::after,
+.stats-table thead th:nth-last-child(2)::after,
+.stats-table thead th:nth-last-child(3)::after {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+/* Estilos para las fotos de los jugadores */
+.player-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FF9E1B;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Efecto hover en las filas */
+.stats-table tbody tr:hover td {
+  background-color: rgba(17, 28, 78, 0.05) !important;
+}
+
+/* Efecto hover en las celdas */
+.stats-table tbody td:hover {
+  background-color: rgba(255, 158, 27, 0.1) !important;
+}
+
+/* Mantener el efecto hover en la tabla de detalles */
+.match-details-table tbody tr:hover td {
+  background-color: rgba(255, 158, 27, 0.05);
+}
+
+/* PAGINACIÓN */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.pagination-controls button {
+  padding: 8px 16px;
+  background-color: #FF9E1B;
+  color: #111C4E;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.pagination-controls button:hover {
+  background-color: #C8102E;
+  color: #fff;
+}
+#pageInfo {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* SUBTABLA DE DETALLES */
+.details-row td {
+  background-color: #f9f9f9;
+  color: #111C4E;
+  padding: 10px;
+}
+.match-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+.match-details-table th,
+.match-details-table td {
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+/* Estilos para ordenación en la tabla de detalles */
+.match-details-table th {
+  position: relative;
+  cursor: pointer;
+  padding-right: 20px !important;
+  background-color: #f2f2f2;
+}
+
+.match-details-table th::before {
+  content: '↕';
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 12px;
+}
+
+.match-details-table th.sorted-asc::before {
+  content: '↑';
+  color: #FF9E1B;
+}
+
+.match-details-table th.sorted-desc::before {
+  content: '↓';
+  color: #FF9E1B;
+}
+
+/* Estilos para valores máximos */
+.match-details-table td.max-value {
+  font-weight: bold;
+  color: #FF9E1B;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(to right, #2F4170, #111C4E);
+  color: #fff;
+  padding: 30px 0;
+  margin-top: 40px;
+  border-top: 1px solid #53565A;
+  text-align: center;
+}
+
+/* FOOTER FEB */
+.feb-footer {
+  background-color: #111C4E; /* Azul oscuro FEB (igual que header) */
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 0.9em;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1500px;
+  margin: 0 auto; /* Centrar contenido */
+}
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+}
+.footer-logo {
+  height: 60px;
+  margin-bottom: 15px;
+}
+.footer-text {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.footer-link {
+  color: #FF9E1B; /* Acento FEB */
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-social {
+  margin-top: 10px;
+}
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #FF9E1B; 
+  color: #111C4E;
+  padding: 5px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.social-icon:hover {
+  background-color: #C8102E;
+  color: #fff;
+}
+
+/* Sección de links */
+.footer-middle h3 {
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-middle li {
+  margin-bottom: 8px;
+}
+.footer-middle a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-middle a:hover {
+  text-decoration: underline;
+}
+
+/* Sección patrocinadores */
+.footer-right h3 {
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.partner-logos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.partner-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Parte inferior (copyright) */
+.footer-bottom {
+  background-color: #0D173A; /* un tono más oscuro, si quieres */
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+.footer-bottom a {
+  color: #FF9E1B;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .stats-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .stats-filters select,
+  .stats-filters input {
+    width: 100%;
+  }
+  
+  .toggle-container {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-item {
+    font-size: 0.7em;
+  }
+  
+  .nav-item img,
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.5em;
+  }
+  
+  .stats-table th,
+  .stats-table td {
+    padding: 6px 8px;
+    font-size: 0.8em;
+  }
+  
+  .pagination-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .pagination-controls button {
+    width: 100%;
+  }
+}
+
+/* Clase para mostrar/ocultar columnas en móviles */
+.mobile-visible {
+  display: none !important;
+}
+
+/* Botón para mostrar más columnas en móviles */
+.mobile-columns-toggle {
+  display: none !important;
+}
+
+/* Menú Hamburguesa */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #111C4E;
+    padding: 80px 20px 20px;
+    transition: 0.3s;
+    z-index: 999;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item a {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .nav-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-item span {
+    font-size: 1em;
+  }
+
+  /* Animación del menú hamburguesa */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  /* Overlay cuando el menú está abierto */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Mantener el encabezado fijo en móvil - regla simplificada */
+  .stats-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f2f2f2;
+  }
+
+  .stats-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+  }
+
+  /* Eliminar todos los z-index de las celdas del cuerpo */
+  .stats-table tbody td,
+  .stats-table td:first-child,
+  .stats-table td:nth-child(2),
+  .stats-table td:nth-child(3),
+  .stats-table td:nth-child(4),
+  .stats-table td:nth-child(5) {
+    position: static;
+    z-index: auto;
+    background-color: #fff;
+  }
+
+  /* Asegurar que los tooltips de equipo estén por debajo del header */
+  .team-name::after {
+    z-index: 99;
+  }
+
+  /* Eliminar reglas duplicadas */
+  .stats-table th:first-child,
+  .stats-table th:nth-child(2),
+  .stats-table th:nth-child(3),
+  .stats-table th:nth-child(4),
+  .stats-table th:nth-child(5),
+  .stats-table thead th:first-child,
+  .stats-table thead th:nth-child(2),
+  .stats-table thead th:nth-child(3),
+  .stats-table thead th:nth-child(4),
+  .stats-table thead th:nth-child(5) {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #f2f2f2;
+  }
+}
+
+/* Estilos para nombres de equipos */
+.team-name {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.team-name::after {
+  content: attr(data-fullname);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111C4E;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 2;
+}
+
+.team-name:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Estilo para la celda de partidos (games-cell) */
+.games-cell {
+  font-weight: bold;
+  cursor: pointer;
+  color: #FF9E1B;
+}
+.games-cell:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para nombres de equipos */
+.team-name {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.team-name::after {
+  content: attr(data-fullname);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111C4E;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 2;
+}
+
+.team-name:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ajustes para móvil */
+@media screen and (max-width: 768px) {
+  .stats-table th,
+  .stats-table td {
+    padding: 6px 8px;
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
+
+  .player-photo {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #FF9E1B;
+  }
+
+  .stats-table-container {
+    margin: 0 -15px;
+    padding: 0 15px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .stats-table {
+    min-width: 1200px;
+  }
+
+  /* Mantener el encabezado fijo en móvil */
+  .stats-table thead {
+    z-index: 10;
+  }
+
+  .stats-table thead th {
+    z-index: 10;
+  }
+
+  /* Columnas fijas en móvil */
+  .stats-table th:first-child,
+  .stats-table td:first-child,
+  .stats-table th:nth-child(2),
+  .stats-table td:nth-child(2),
+  .stats-table th:nth-child(3),
+  .stats-table td:nth-child(3),
+  .stats-table th:nth-child(4),
+  .stats-table td:nth-child(4),
+  .stats-table th:nth-child(5),
+  .stats-table td:nth-child(5) {
+    z-index: 11;
+  }
+
+  .stats-table thead th:first-child,
+  .stats-table thead th:nth-child(2),
+  .stats-table thead th:nth-child(3),
+  .stats-table thead th:nth-child(4),
+  .stats-table thead th:nth-child(5) {
+    z-index: 12;
+  }
+}
+
+/* Sombra para el encabezado */
+.stats-table thead::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  pointer-events: none;
+}
+
+/* Clase para mostrar todas las columnas en móvil */
+.mobile-all-columns .stats-table th,
+.mobile-all-columns .stats-table td {
+  display: table-cell;
+}
+
+/* Ajustar anchos de columnas para PC */
+@media screen and (min-width: 769px) {
+  .stats-table th,
+  .stats-table td {
+    padding: 8px 4px; /* Reducido el padding horizontal */
+    font-size: 0.9em;
+  }
+
+  /* Columnas con números */
+  .stats-table td[data-col^="t"],
+  .stats-table td[data-col="pts"],
+  .stats-table td[data-col="ro"],
+  .stats-table td[data-col="rd"],
+  .stats-table td[data-col="rt"],
+  .stats-table td[data-col="as"],
+  .stats-table td[data-col="br"],
+  .stats-table td[data-col="bp"],
+  .stats-table td[data-col="tp"],
+  .stats-table td[data-col="fc"],
+  .stats-table td[data-col="va"],
+  .stats-table td[data-col="pm"] {
+    min-width: 35px;
+    max-width: 45px;
+  }
+
+  /* Columnas de porcentajes */
+  .stats-table td[data-col^="pct"] {
+    min-width: 45px;
+    max-width: 55px;
+  }
+
+  /* Columnas de identificación */
+  .stats-table td:first-child,
+  .stats-table td:nth-child(2) {
+    min-width: 30px;
+    max-width: 40px;
+  }
+
+  /* Columna de foto */
+  .stats-table td:nth-child(3) {
+    min-width: 50px;
+    max-width: 60px;
+  }
+
+  /* Columna de nombre */
+  .stats-table td[data-col="playerName"] {
+    min-width: 120px;
+    max-width: 150px;
+  }
+
+  /* Columna de equipo */
+  .team-name {
+    min-width: 45px;
+    max-width: 55px;
+  }
+
+  /* Columna de partidos */
+  .games-cell {
+    min-width: 35px;
+    max-width: 45px;
+  }
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 28, 78, 0.95);
+    z-index: 9999;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #2F4170;
+    border-top: 5px solid #FF9E1B;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 30px;
+}
+
+.loader-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 6px;
+    background-color: #2F4170;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #FF9E1B;
+    transition: width 0.3s ease;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader-hidden {
+    display: none;
+}
+
+.player-name {
+    font-weight: 600;
+    color: #2F4170;
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.player-name:hover {
+    color: #FF9E1B;
+    text-decoration: underline;
+}
+
+.player-name::after {
+    content: '📊';
+    font-size: 12px;
+    margin-left: 4px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.player-name:hover::after {
+    opacity: 1;
+}
