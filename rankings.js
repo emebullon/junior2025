@@ -94,7 +94,7 @@ function setupMobileMenu() {
  * Funciones principales
  ***************************************/
 async function fetchMatchFiles() {
-  const apiUrl = "https://api.github.com/repos/emebullon/mini2025/contents/";
+  const apiUrl = "https://api.github.com/repos/emebullon/junior2025/contents/";
   try {
     const response = await fetch(apiUrl);
     const files = await response.json();
