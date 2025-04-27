@@ -163,6 +163,7 @@ async function loadAllStats() {
           "LF Endesa",
           "LF Challenge",
           "L.F. 2",
+          "C ESP CLUBES JR FEM",
           "CE SSAA Cadete Fem.",
           "CE SSA Infantil Fem."
         ];
