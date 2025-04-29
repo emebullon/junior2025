@@ -19,7 +19,7 @@ let competitionSet = new Set();
  * 1) OBTENER LA LISTA DE ARCHIVOS JSON DESDE GITHUB
  *********************************/
 async function fetchMatchFiles() {
-  const apiUrl = "https://api.github.com/repos/emebullon/mini2025/contents/"; // Ajusta si están en subcarpeta
+  const apiUrl = "https://api.github.com/repos/emebullon/junior2025/contents/"; // Ajusta si están en subcarpeta
   try {
     const response = await fetch(apiUrl);
     const files = await response.json();
