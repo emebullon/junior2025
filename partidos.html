@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partidos y Resultados - FEB</title>
+  <!-- Flatpickr CSS para el calendario visual -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <!-- Enlazamos el CSS externo -->
+  <link rel="stylesheet" href="partidos.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <img 
+        src="https://raw.githubusercontent.com/emebullon/mini2025/refs/heads/main/planeta%20mini%20logo%20mosca.svg" 
+        alt="Logo FEB" 
+        class="logo"
+      >
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-item">
+            <a href="index.html">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/home-outline.svg" alt="Icono Inicio">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="partidos.html">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/basketball-outline.svg" alt="Icono Partidos">
+              <span>Partidos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/newspaper-outline.svg" alt="Icono Noticias">
+              <span>Noticias</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/calendar-outline.svg" alt="Icono Calendario">
+              <span>Calendario</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="rankings.html">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/stats-chart-outline.svg" alt="Icono Rankings">
+              <span>Rankings</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/add.svg" alt="Icono Más">
+              <span>Más</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="#">
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/log-in.svg" 
+          alt="Icono Usuario" 
+          class="icon"
+        >
+      </a>
+      <a href="#">
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/search.svg" 
+          alt="Icono Búsqueda" 
+          class="icon"
+        >
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="container">
+    <!-- BARRA DE COMPETICIONES (se generará con JS) -->
+    <div class="competitions-bar" id="competitionsBar">
+      <!-- Aquí se insertarán las pestañas de competiciones -->
+    </div>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <!-- Icono de calendario para abrir el selector (popup) -->
+        <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/calendar-outline.svg" alt="Icono Calendario" class="calendar-icon" id="openDatePicker">
+        <h2 id="monthTitle">Febrero 2025</h2>
+        <!-- Input date oculto para flatpickr si se necesita -->
+        <input type="date" id="datePicker" style="display:none;" min="2025-01-01" max="2025-12-31">
+      </div>
+      <button class="btn-filters" id="openFiltersBtn">
+        <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/filter.svg" alt="Icono Filtros">
+        FILTROS
+      </button>
+    </div>
+
+    <!-- BARRA DE DÍAS DESPLAZABLE -->
+    <div class="dates-scroll-container">
+      <button class="arrow-btn" id="arrowLeft">&laquo;</button>
+      <ul class="dates-list" id="datesList">
+        <!-- Se generarán automáticamente todos los días de 2025 -->
+      </ul>
+      <button class="arrow-btn" id="arrowRight">&raquo;</button>
+    </div>
+
+    <!-- LISTADO DE PARTIDOS -->
+    <div class="matches-list" id="matchesList">
+      <!-- Las tarjetas se insertarán aquí con JS -->
+    </div>
+  </div>
+
+  <!-- PANEL DE FILTROS (OVERLAY) -->
+  <div class="filters-overlay" id="filtersOverlay">
+    <div class="filters-header">
+      <h3>Filtros</h3>
+      <button class="close-filters" id="closeFiltersBtn">&times;</button>
+    </div>
+    <div class="filters-content">
+      <div class="filter-section">
+        <h4>Tipo de Competición</h4>
+        <ul id="competitionFilters">
+          <!-- Se generarán automáticamente -->
+        </ul>
+      </div>
+      <div class="filter-section">
+        <h4>Género</h4>
+        <ul>
+          <li data-gender="">Todos</li>
+          <li data-gender="masculino">Masculino</li>
+          <li data-gender="femenino">Femenino</li>
+          <li data-gender="chicos">Chicos</li>
+          <li data-gender="chicas">Chicas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="filters-footer">
+      <button class="btn-clear" id="clearFiltersBtn">Limpiar</button>
+      <button class="btn-apply" id="applyFiltersBtn">Aplicar</button>
+    </div>
+  </div>
+
+  <!-- Modal para el date picker con flatpickr -->
+  <div id="datePickerModal" style="display:none;"></div>
+
+  <!-- FOOTER -->
+  <footer class="feb-footer">
+    <div class="footer-container">
+      <!-- Sección izquierda: logo y un texto breve -->
+      <div class="footer-left">
+        <img 
+          src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/logofeb.svg" 
+          alt="Logo FEB" 
+          class="footer-logo"
+        >
+        <p class="footer-text">
+          Regístrate para recibir las últimas noticias de nuestro equipo.
+          <br>
+          <a href="#" class="footer-link">Más info &raquo;</a>
+        </p>
+        <div class="footer-social">
+          <p>Síguenos en redes:</p>
+          <!-- Ejemplo de iconos (FontAwesome o similares) -->
+          <a href="#" class="social-icon">FB</a>
+          <a href="#" class="social-icon">TW</a>
+          <a href="#" class="social-icon">IG</a>
+        </div>
+      </div>
+
+      <!-- Sección central: Links -->
+      <div class="footer-middle">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Vídeos</a></li>
+        </ul>
+      </div>
+
+      <!-- Sección derecha: patrocinadores -->
+      <div class="footer-right">
+        <h3>Patrocinadores Oficiales</h3>
+        <div class="partner-logos">
+          <img 
+            src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/niker.png" 
+            alt="Nike" 
+            class="partner-logo"
+          >
+          <img 
+            src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/endesa.png" 
+            alt="Endesa" 
+            class="partner-logo"
+          >
+          <img 
+            src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/azul.png" 
+            alt="Azul Marino" 
+            class="partner-logo"
+          >
+          <img 
+            src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/tenerife.png" 
+            alt="Tenerife" 
+            class="partner-logo"
+          >
+          <img 
+            src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/iberia.png" 
+            alt="Iberia" 
+            class="partner-logo"
+          >
+          <img 
+            src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/caixa.png" 
+            alt="CaixaBank" 
+            class="partner-logo"
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2025 Federación Española de Baloncesto. Todos los derechos reservados.
+        <br>
+        <a href="#">Política de privacidad</a> | 
+        <a href="#">Términos y condiciones</a> | 
+        <a href="#">Cookies</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Incluir flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- Enlazar el script externo -->
+  <script src="partidos.js"></script>
+</body>
+</html> 

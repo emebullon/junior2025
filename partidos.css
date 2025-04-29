@@ -1,0 +1,595 @@
+/* ===========================
+   1) RESET Y ESTILOS BÁSICOS
+   =========================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Fondo azul pastel */
+  body {
+    background: linear-gradient(to right, #2F4170, #111C4E);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  a {
+    text-decoration: none;
+    color: #FF9E1B;
+  }
+  ul {
+    list-style: none;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  /* ===========================
+     2) HEADER
+     =========================== */
+  header {
+    background: linear-gradient(to right, #2F4170, #111C4E);
+    padding: 10px 20px;
+    border-bottom: 1px solid #53565A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+  }
+  .header-left nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .logo {
+    height: 100px;
+  }
+  nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Manifold', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  .nav-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #ffffff;
+  }
+  /* Iconos no seleccionados a blanco */
+  .nav-item img {
+    width: 36px;
+    height: 36px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s ease-in-out;
+  }
+  .nav-item:hover img {
+    filter: brightness(1.2) invert(1);
+  }
+  /* Icono activo en naranja #FF9E1B */
+  .nav-item.active img {
+    filter: brightness(0) saturate(100%) invert(49%) sepia(100%) saturate(2637%) hue-rotate(358deg) brightness(102%) contrast(101%);
+  }
+  .nav-item.active span {
+    color: #FF9E1B;
+  }
+  .icon {
+    width: 36px;
+    height: 36px;
+    filter: brightness(0) invert(1);
+  }
+  .icon:hover {
+    filter: brightness(1.2) invert(1);
+  }
+  
+  /* ===========================
+     3) CONTENEDOR PRINCIPAL
+     =========================== */
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  /* ===========================
+     4) BARRA DE COMPETICIONES
+     =========================== */
+  .competitions-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  .competition-tab {
+    background-color: #1D296F;
+    color: #fff;
+    border: 1px solid #53565A;
+    border-radius: 20px;
+    padding: 8px 16px;
+    white-space: nowrap;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .competition-tab:hover {
+    background-color: #FF9E1B;
+    color: #111C4E;
+  }
+  .competition-tab.active {
+    background-color: #FF9E1B;
+    color: #111C4E;
+  }
+  
+  /* ===========================
+     5) BARRA SUPERIOR
+     =========================== */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .top-bar-left h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Manifold', Arial, sans-serif;
+  }
+  .calendar-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+  }
+  .calendar-icon:hover {
+    filter: brightness(1.2) invert(1);
+  }
+  .btn-filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #111C4E;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 1em;
+    border: 1px solid #fff;
+  }
+  .btn-filters img {
+    width: 20px;
+    height: 20px;
+    filter: none;
+  }
+  .btn-filters:hover {
+    background-color: #FF9E1B;
+    color: #111C4E;
+  }
+  
+  /* ===========================
+     6) BARRA DE DÍAS DESPLAZABLE
+     =========================== */
+  .dates-scroll-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .arrow-btn {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .arrow-btn:hover {
+    color: #FF9E1B;
+  }
+  .dates-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding-bottom: 5px; /* Para compensar el espacio de la barra oculta */
+  }
+  .dates-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+  .dates-list::-webkit-scrollbar-track {
+    background: #1D296F;
+  }
+  .dates-list::-webkit-scrollbar-thumb {
+    background: #53565A;
+    border-radius: 3px;
+  }
+  .date-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    background-color: #1D296F;
+    border: 1px solid #53565A;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .date-item span.dayOfWeek {
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
+  .date-item span.dayNumber {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+  .date-item:hover {
+    background-color: #FF9E1B;
+    color: #111C4E;
+  }
+  .date-item.active {
+    background-color: #FF9E1B;
+    color: #111C4E;
+  }
+  
+  /* ===========================
+     7) LISTADO DE PARTIDOS
+     =========================== */
+  .matches-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  .match-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    min-height: 180px;
+  }
+  .match-card:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .match-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .teams {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+  .team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+  }
+  .team-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+  }
+  .team-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 2px;
+    object-fit: contain;
+  }
+  .team-name {
+    font-weight: 500;
+    font-size: 0.95em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .team-score {
+    font-size: 1.2em;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: right;
+  }
+  .match-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+  .match-status {
+    font-size: 0.9em;
+    color: #FF9E1B;
+    font-weight: bold;
+  }
+  .btn-more {
+    background-color: #111C4E;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .btn-more:hover {
+    background-color: #FF9E1B;
+    color: #111C4E;
+  }
+  
+  /* ===========================
+     8) PANEL DE FILTROS (OVERLAY)
+     =========================== */
+  .filters-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #1D296F;
+    border-left: 1px solid #53565A;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .filters-overlay.open {
+    transform: translateX(0);
+  }
+  .filters-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .filters-header h3 {
+    font-size: 1.2em;
+    font-family: 'Manifold', Arial, sans-serif;
+    color: #fff;
+  }
+  .close-filters {
+    background: none;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+  }
+  .filters-content {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .filter-section h4 {
+    font-size: 1em;
+    color: #FFD700;
+    margin-bottom: 10px;
+  }
+  .filter-section ul li {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .filter-section ul li:hover {
+    color: #FF9E1B;
+  }
+  .filters-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .btn-clear,
+  .btn-apply {
+    background-color: #53565A;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  .btn-clear:hover {
+    background-color: #C8102E;
+  }
+  .btn-apply {
+    background-color: #36E0A2;
+    color: #111C4E;
+    font-weight: bold;
+  }
+  .btn-apply:hover {
+    opacity: 0.8;
+  }
+  
+  /* ===========================
+     9) RESPONSIVE
+     =========================== */
+  @media (min-width: 1400px) {
+    .matches-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 1399px) and (min-width: 992px) {
+    .matches-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .matches-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .match-card {
+      min-height: 160px;
+    }
+  }
+  @media (max-width: 767px) {
+    .matches-list {
+      grid-template-columns: 1fr;
+    }
+    .match-card {
+      min-height: 150px;
+    }
+    .team-logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .match-indicator {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #FF9E1B;
+    border-radius: 50%;
+    margin-top: 4px;
+  }
+  
+  /* FOOTER FEB */
+  .feb-footer {
+    background: linear-gradient(to right, #2F4170, #111C4E);
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.9em;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto; /* Centrar contenido */
+  }
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: 1;
+  }
+  .footer-logo {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .footer-text {
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .footer-link {
+    color: #FF9E1B; /* Acento FEB */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  .footer-social {
+    margin-top: 10px;
+  }
+  .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #FF9E1B; 
+    color: #111C4E;
+    padding: 5px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .social-icon:hover {
+    background-color: #C8102E;
+    color: #fff;
+  }
+  
+  /* Sección de links */
+  .footer-middle h3 {
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .footer-middle ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-middle li {
+    margin-bottom: 8px;
+  }
+  .footer-middle a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-middle a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sección patrocinadores */
+  .footer-right h3 {
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .partner-logos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .partner-logo {
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  /* Parte inferior (copyright) */
+  .footer-bottom {
+    background-color: #0D173A; /* un tono más oscuro, si quieres */
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+  .footer-bottom a {
+    color: #FF9E1B;
+    text-decoration: none;
+  }
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
