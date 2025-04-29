@@ -106,8 +106,8 @@ async function fetchMatchFiles() {
 }
 
 function isGroupPhase(round) {
-  // Si es una letra sola (A, B, C, D, E) es fase de grupos
-  return /^[A-E]$/.test(round.trim());
+  // Si es una letra sola (A, B, C, D, E, F, G, H) es fase de grupos
+  return /^[A-H]$/.test(round.trim());
 }
 
 // Añadir función para convertir minutos formateados a segundos
