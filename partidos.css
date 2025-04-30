@@ -346,8 +346,11 @@
     text-align: right;
   }
   .arrow {
-    color: white;
+    color: #F5A623;
     font-size: 1em;
+  }
+  .team-score .score-number {
+    color: #F5A623;
   }
   .match-footer {
     display: flex;
