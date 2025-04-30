@@ -618,7 +618,7 @@ function toggleMatchDetails(cell, player) {
     detailsRow.className = "details-row";
     
     const detailsCell = document.createElement("td");
-    detailsCell.colSpan = 27; // Aumentar en 1 para la nueva columna
+    detailsCell.colSpan = 27;
     
     const detailsTable = document.createElement("table");
     detailsTable.className = "match-details-table";
@@ -717,6 +717,17 @@ function toggleMatchDetails(cell, player) {
     });
     
     const tbody = document.createElement("tbody");
+    
+    // Ordenar los partidos por fecha (de más antiguo a más nuevo)
+    player.matches.sort((a, b) => {
+      // Convertir fechas en formato DD-MM-YYYY a objetos Date
+      const [dayA, monthA, yearA] = a.matchDate.split('-');
+      const [dayB, monthB, yearB] = b.matchDate.split('-');
+      const dateA = new Date(yearA, monthA - 1, dayA);
+      const dateB = new Date(yearB, monthB - 1, dayB);
+      return dateA - dateB;
+    });
+
     player.matches.forEach(match => {
       const resultadoStr = `<span style="color:${match.resultado === 'G' ? 'green' : 'red'};font-weight:bold">${match.resultado}</span> ${match.marcador}`;
       const rivalShort = match.rivalShort || (match.rival ? match.rival.substring(0, 3).toUpperCase() : "");
@@ -755,7 +766,11 @@ function toggleMatchDetails(cell, player) {
     detailsTable.appendChild(tbody);
     detailsCell.appendChild(detailsTable);
     detailsRow.appendChild(detailsCell);
-    row.parentNode.insertBefore(detailsRow, nextRow);
+    row.parentNode.insertBefore(detailsRow, row.nextSibling);
+
+    // Marcar visualmente la columna de fecha como ordenada ascendentemente
+    const dateHeader = thead.querySelector('th[data-sort="date"]');
+    dateHeader.classList.add('sorted-asc');
   }
 }
 
