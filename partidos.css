@@ -345,9 +345,13 @@
     min-width: 30px;
     text-align: right;
   }
-  .arrow {
+  span.arrow {
     color: #F5A623;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    display: inline-flex;
+    align-items: center; /* Vertically centers the arrow */
+    justify-content: center; /* Optional: Ensures the content is horizontally centered */
+    vertical-align: middle; /* Ensures the arrow aligns with text baselines */
   }
   .team-score .score-number {
     color: #F5A623;
