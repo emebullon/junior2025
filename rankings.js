@@ -295,6 +295,14 @@ async function loadAllStats() {
             marcador: `${teamAPoints}-${teamBPoints}`
           });
         });
+
+        // Después de actualizar los totales:
+        totalRecord.pct2 = totalRecord.t2i > 0 ? ((totalRecord.t2c / totalRecord.t2i) * 100).toFixed(1) : "0.0";
+        totalRecord.pct3 = totalRecord.t3i > 0 ? ((totalRecord.t3c / totalRecord.t3i) * 100).toFixed(1) : "0.0";
+        totalRecord.pctTl = totalRecord.tli > 0 ? ((totalRecord.tlc / totalRecord.tli) * 100).toFixed(1) : "0.0";
+        phaseRecord.pct2 = phaseRecord.t2i > 0 ? ((phaseRecord.t2c / phaseRecord.t2i) * 100).toFixed(1) : "0.0";
+        phaseRecord.pct3 = phaseRecord.t3i > 0 ? ((phaseRecord.t3c / phaseRecord.t3i) * 100).toFixed(1) : "0.0";
+        phaseRecord.pctTl = phaseRecord.tli > 0 ? ((phaseRecord.tlc / phaseRecord.tli) * 100).toFixed(1) : "0.0";
       });
 
       // --- Jugadores del equipo B ---
@@ -416,6 +424,14 @@ async function loadAllStats() {
             marcador: `${teamBPoints}-${teamAPoints}`
           });
         });
+
+        // Después de actualizar los totales:
+        totalRecord.pct2 = totalRecord.t2i > 0 ? ((totalRecord.t2c / totalRecord.t2i) * 100).toFixed(1) : "0.0";
+        totalRecord.pct3 = totalRecord.t3i > 0 ? ((totalRecord.t3c / totalRecord.t3i) * 100).toFixed(1) : "0.0";
+        totalRecord.pctTl = totalRecord.tli > 0 ? ((totalRecord.tlc / totalRecord.tli) * 100).toFixed(1) : "0.0";
+        phaseRecord.pct2 = phaseRecord.t2i > 0 ? ((phaseRecord.t2c / phaseRecord.t2i) * 100).toFixed(1) : "0.0";
+        phaseRecord.pct3 = phaseRecord.t3i > 0 ? ((phaseRecord.t3c / phaseRecord.t3i) * 100).toFixed(1) : "0.0";
+        phaseRecord.pctTl = phaseRecord.tli > 0 ? ((phaseRecord.tlc / phaseRecord.tli) * 100).toFixed(1) : "0.0";
       });
     } catch (err) {
       console.error("Error al cargar", url, err);
@@ -442,7 +458,7 @@ function fillSelects() {
     filterCompetition.appendChild(opt);
   });
 
-  teamSet.forEach(t => {
+  [...teamSet].sort((a, b) => a.localeCompare(b)).forEach(t => {
     const opt = document.createElement("option");
     opt.value = t;
     opt.textContent = t;
@@ -680,9 +696,13 @@ function toggleMatchDetails(cell, player) {
           let aVal = a.querySelector(`td[data-sort="${sortKey}"]`).dataset.value;
           let bVal = b.querySelector(`td[data-sort="${sortKey}"]`).dataset.value;
           
-          // Convertir a número si es posible
-          if (!isNaN(aVal)) aVal = parseFloat(aVal);
-          if (!isNaN(bVal)) bVal = parseFloat(bVal);
+          // Forzar conversión a número para columnas numéricas y porcentajes
+          if (
+            ["pct2", "pct3", "pctTl", "t2c", "t2i", "t3c", "t3i", "tlc", "tli", "pts", "min", "ro", "rd", "rt", "as", "br", "bp", "tp", "fc", "va", "pm"].includes(sortKey)
+          ) {
+            aVal = parseFloat(aVal) || 0;
+            bVal = parseFloat(bVal) || 0;
+          }
           
           if (currentOrder === 'asc') {
             return aVal > bVal ? 1 : -1;
@@ -760,9 +780,24 @@ function sortByColumn(colKey) {
 }
 
 function sortArray(array, colKey, order, mode) {
+  const numericCols = [
+    "min", "pts", "t2c", "t2i", "pct2", "t3c", "t3i", "pct3", "tlc", "tli", "pctTl",
+    "ro", "rd", "rt", "as", "br", "bp", "tp", "fc", "va", "pm", "games", "+/-"
+  ];
+
   return [...array].sort((a, b) => {
-    const aValue = getSortValue(a, colKey, mode);
-    const bValue = getSortValue(b, colKey, mode);
+    let aValue = getSortValue(a, colKey, mode);
+    let bValue = getSortValue(b, colKey, mode);
+
+    if (numericCols.includes(colKey)) {
+      aValue = parseFloat(aValue) || 0;
+      bValue = parseFloat(bValue) || 0;
+    }
+
+    // LOG para depuración
+    if (["pct2", "pct3", "pctTl", "t2c", "t2i", "t3c", "t3i", "tlc", "tli", "pts", "min", "ro", "rd", "rt", "as", "br", "bp", "tp", "fc", "va", "pm"].includes(colKey)) {
+      console.log(`ORDENANDO POR ${colKey}:`, aValue, bValue, "| RAW:", getSortValue(a, colKey, mode), getSortValue(b, colKey, mode));
+    }
 
     if (order === "asc") {
       return aValue > bValue ? 1 : -1;
@@ -777,7 +812,16 @@ function getSortValue(obj, colKey, mode) {
   if (colKey === 'min') {
     return obj.seconds;  // Usamos los segundos directamente para ordenar
   }
-  
+
+  // Forzar conversión a número para porcentajes
+  if (['pct2', 'pct3', 'pctTl'].includes(colKey)) {
+    if (mode === "promedios" && obj.games > 0) {
+      // Si es promedio, calcula el porcentaje promedio
+      return obj[colKey] ? parseFloat(obj[colKey]) : 0;
+    }
+    return obj[colKey] ? parseFloat(obj[colKey]) : 0;
+  }
+
   if (mode === "promedios" && obj.games > 0) {
     if (colKey === 'min') {
       return obj.seconds / obj.games;  // Para promedios también usamos segundos
@@ -816,6 +860,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         // El loader ya está visible por defecto
         await loadAllStats();
+        // Ordenar por puntos totales descendente al cargar
+        currentSortCol = "pts";
+        currentSortOrder = "desc";
+        applyFilters();
         // Ocultamos el loader cuando todo está cargado
         document.querySelector('.loader-container').classList.add('loader-hidden');
     } catch (error) {
