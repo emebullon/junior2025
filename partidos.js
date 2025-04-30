@@ -224,6 +224,16 @@ function createMatchCard(match) {
 
   teamBRow.appendChild(teamBInfo);
   teamBRow.appendChild(teamBScoreSpan);
+  
+  // 👉 Winner logic
+  if (parseInt(match.teamAPts) > parseInt(match.teamBPts)) {
+    teamAScoreSpan.classList.add("winner-score");
+    teamAInfo.insertAdjacentHTML("afterbegin", `<span class="arrow">➡️</span>`);
+  } else if (parseInt(match.teamBPts) > parseInt(match.teamAPts)) {
+    teamBScoreSpan.classList.add("winner-score");
+    teamBInfo.insertAdjacentHTML("afterbegin", `<span class="arrow">➡️</span>`);
+  }
+  // End of winner logic
 
   teamsDiv.appendChild(teamARow);
   teamsDiv.appendChild(teamBRow);
