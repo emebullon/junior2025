@@ -227,9 +227,9 @@ function createMatchCard(match) {
   
   // 👉 Winner logic
   if (parseInt(match.teamAPts) > parseInt(match.teamBPts)) {
-    teamAScoreSpan.innerHTML = `<span class="arrow">▶</span><span class="score-number">${match.teamAPts}</span>`;
+    teamAScoreSpan.innerHTML = `<span class="arrow">▶ </span><span class="score-number">${match.teamAPts}</span>`;
   } else if (parseInt(match.teamBPts) > parseInt(match.teamAPts)) {
-    teamBScoreSpan.innerHTML = `<span class="arrow">▶</span><span class="score-number">${match.teamBPts}</span>`;
+    teamBScoreSpan.innerHTML = `<span class="arrow">▶ </span><span class="score-number">${match.teamBPts}</span>`;
   }
   // End of winner logic
 
