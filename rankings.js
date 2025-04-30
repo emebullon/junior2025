@@ -136,7 +136,7 @@ async function loadAllStats() {
     try {
       const resp = await fetch(url);
       const data = await resp.json();
-      
+
       // Actualizar el progreso
       processedFiles++;
       const progress = Math.round((processedFiles / totalFiles) * 100);
@@ -148,136 +148,272 @@ async function loadAllStats() {
       competitionSet.add(comp);
 
       const matchDate = data.HEADER.starttime || "";
-      const scoreboardTeams = data.SCOREBOARD.TEAM;
-      const teamAName = scoreboardTeams[0].name || "Equipo A";
-      const teamBName = scoreboardTeams[1].name || "Equipo B";
 
-      scoreboardTeams.forEach((teamObj, index) => {
-        const teamName = teamObj.name || "Equipo X";
+      // NUEVO: Usar HEADER.TEAM para puntos/nombre/logo y SCOREBOARD.TEAM para jugadores
+      const teamAHeader = data.HEADER.TEAM[0];
+      const teamBHeader = data.HEADER.TEAM[1];
+      const teamA = data.SCOREBOARD.TEAM[0];
+      const teamB = data.SCOREBOARD.TEAM[1];
+
+      const teamAPoints = parseInt(teamAHeader.pts, 10) || 0;
+      const teamBPoints = parseInt(teamBHeader.pts, 10) || 0;
+
+      const teamAName = teamAHeader.name || "Equipo A";
+      const teamBName = teamBHeader.name || "Equipo B";
+
+      const currentPhase = isGroupPhase(round) ? "Fase de Grupos" : "Playoffs";
+
+      const femaleCompetitions = [
+        "LF Endesa",
+        "LF Challenge",
+        "L.F. 2",
+        "C ESP CLUBES JR FEM",
+        "CE SSAA Cadete Fem.",
+        "CE SSA Infantil Fem."
+      ];
+      let genero = "H";
+      if (femaleCompetitions.some(f => f.toLowerCase() === comp.trim().toLowerCase())) {
+        genero = "M";
+      }
+
+      // --- Jugadores del equipo A ---
+      (teamA.PLAYER || []).forEach((player) => {
+        const teamName = teamAName;
         teamSet.add(teamName);
 
-        const rivalName = (index === 0) ? teamBName : teamAName;
-        const currentPhase = isGroupPhase(round) ? "Fase de Grupos" : "Playoffs";
+        const rivalName = teamBName;
 
-        const femaleCompetitions = [
-          "LF Endesa",
-          "LF Challenge",
-          "L.F. 2",
-          "C ESP CLUBES JR FEM",
-          "CE SSAA Cadete Fem.",
-          "CE SSA Infantil Fem."
-        ];
-        let genero = "H";
-        if (femaleCompetitions.some(f => f.toLowerCase() === comp.trim().toLowerCase())) {
-          genero = "M";
-        }
+        const p2a = parseInt(player.p2a || 0);
+        const p2m = parseInt(player.p2m || 0);
+        const p3a = parseInt(player.p3a || 0);
+        const p3m = parseInt(player.p3m || 0);
+        const p1a = parseInt(player.p1a || 0);
+        const p1m = parseInt(player.p1m || 0);
 
-        (teamObj.PLAYER || []).forEach(player => {
-          // Crear IDs únicos para cada fase y total
-          const totalId = `${player.id}-${teamName}-${comp}-total`;
-          const groupPhaseId = `${player.id}-${teamName}-${comp}-grupos`;
-          const playoffsId = `${player.id}-${teamName}-${comp}-playoffs`;
+        // Crear IDs únicos para cada fase y total
+        const totalId = `${player.id}-${teamName}-${comp}-total`;
+        const groupPhaseId = `${player.id}-${teamName}-${comp}-grupos`;
+        const playoffsId = `${player.id}-${teamName}-${comp}-playoffs`;
 
-          // Inicializar registros si no existen
-          [totalId, groupPhaseId, playoffsId].forEach(id => {
-            if (!playersMap.has(id)) {
-              playersMap.set(id, {
-                dorsal: player.no || "",
-                playerPhoto: player.logo || "https://via.placeholder.com/50",
-                playerName: player.name || "Desconocido",
-                teamName,
-                competition: comp,
-                round: round,
-                phaseType: id.endsWith('total') ? "" : (id.endsWith('grupos') ? "Fase de Grupos" : "Playoffs"),
-                gender: genero,
-                games: 0,
-                seconds: 0, // Total de segundos jugados
-                pts: 0,
-                t2i: 0,
-                t2c: 0,
-                t3i: 0,
-                t3c: 0,
-                tli: 0,
-                tlc: 0,
-                ro: 0,
-                rd: 0,
-                rt: 0,
-                as: 0,
-                br: 0,
-                bp: 0,
-                tp: 0,
-                fc: 0,
-                va: 0,
-                pm: 0,
-                matches: []
-              });
-            }
-          });
-
-          // Actualizar estadísticas en el registro total y de fase
-          const totalRecord = playersMap.get(totalId);
-          const phaseRecord = playersMap.get(currentPhase === "Fase de Grupos" ? groupPhaseId : playoffsId);
-
-          [totalRecord, phaseRecord].forEach(record => {
-            record.games += 1;
-            record.seconds += minutesToSeconds(player.minFormatted || "0:00");
-
-            const p2a = parseInt(player.p2a || 0);
-            const p2m = parseInt(player.p2m || 0);
-            const p3a = parseInt(player.p3a || 0);
-            const p3m = parseInt(player.p3m || 0);
-            const p1a = parseInt(player.p1a || 0);
-            const p1m = parseInt(player.p1m || 0);
-
-            record.pts += parseInt(player.pts || 0);
-            record.t2i += p2a;
-            record.t2c += p2m;
-            record.t3i += p3a;
-            record.t3c += p3m;
-            record.tli += p1a;
-            record.tlc += p1m;
-            record.ro += parseInt(player.ro || 0);
-            record.rd += parseInt(player.rd || 0);
-            record.rt += parseInt(player.rt || 0);
-            record.as += parseInt(player.assist || 0);
-            record.br += parseInt(player.st || 0);
-            record.bp += parseInt(player.to || 0);
-            record.tp += parseInt(player.bs || 0);
-            record.fc += parseInt(player.pf || 0);
-            record.va += parseInt(player.val || 0);
-            record.pm += parseInt(player.pllss || 0);
-
-            const pct2 = (p2a > 0) ? ((p2m / p2a) * 100).toFixed(1) : "0.0";
-            const pct3 = (p3a > 0) ? ((p3m / p3a) * 100).toFixed(1) : "0.0";
-            const pctTl = (p1a > 0) ? ((p1m / p1a) * 100).toFixed(1) : "0.0";
-
-            record.matches.push({
-              matchDate,
+        // Inicializar registros si no existen
+        [totalId, groupPhaseId, playoffsId].forEach(id => {
+          if (!playersMap.has(id)) {
+            playersMap.set(id, {
+              dorsal: player.no || "",
+              playerPhoto: player.logo || "https://via.placeholder.com/50",
+              playerName: player.name || "Desconocido",
+              teamName,
+              competition: comp,
               round: round,
-              phaseType: currentPhase,
-              rival: rivalName,
-              minutes: player.minFormatted || "0:00",
-              pts: parseInt(player.pts || 0),
-              t2i: p2a,
-              t2c: p2m,
-              pct2,
-              t3i: p3a,
-              t3c: p3m,
-              pct3,
-              tli: p1a,
-              tlc: p1m,
-              pctTl,
-              ro: parseInt(player.ro || 0),
-              rd: parseInt(player.rd || 0),
-              rt: parseInt(player.rt || 0),
-              as: parseInt(player.assist || 0),
-              br: parseInt(player.st || 0),
-              bp: parseInt(player.to || 0),
-              tp: parseInt(player.bs || 0),
-              fc: parseInt(player.pf || 0),
-              va: parseInt(player.val || 0),
-              pm: parseInt(player.pllss || 0)
+              phaseType: id.endsWith('total') ? "" : (id.endsWith('grupos') ? "Fase de Grupos" : "Playoffs"),
+              gender: genero,
+              games: 0,
+              seconds: 0,
+              pts: 0,
+              t2i: 0,
+              t2c: 0,
+              t3i: 0,
+              t3c: 0,
+              tli: 0,
+              tlc: 0,
+              ro: 0,
+              rd: 0,
+              rt: 0,
+              as: 0,
+              br: 0,
+              bp: 0,
+              tp: 0,
+              fc: 0,
+              va: 0,
+              pm: 0,
+              matches: []
             });
+          }
+        });
+
+        // Actualizar estadísticas en el registro total y de fase
+        const totalRecord = playersMap.get(totalId);
+        const phaseRecord = playersMap.get(currentPhase === "Fase de Grupos" ? groupPhaseId : playoffsId);
+
+        [totalRecord, phaseRecord].forEach(record => {
+          record.games += 1;
+          record.seconds += minutesToSeconds(player.minFormatted || "0:00");
+
+          record.pts += parseInt(player.pts || 0);
+          record.t2i += p2a;
+          record.t2c += p2m;
+          record.t3i += p3a;
+          record.t3c += p3m;
+          record.tli += p1a;
+          record.tlc += p1m;
+          record.ro += parseInt(player.ro || 0);
+          record.rd += parseInt(player.rd || 0);
+          record.rt += parseInt(player.rt || 0);
+          record.as += parseInt(player.assist || 0);
+          record.br += parseInt(player.st || 0);
+          record.bp += parseInt(player.to || 0);
+          record.tp += parseInt(player.bs || 0);
+          record.fc += parseInt(player.pf || 0);
+          record.va += parseInt(player.val || 0);
+          record.pm += parseInt(player.pllss || 0);
+
+          const pct2 = (p2a > 0) ? ((p2m / p2a) * 100).toFixed(1) : "0.0";
+          const pct3 = (p3a > 0) ? ((p3m / p3a) * 100).toFixed(1) : "0.0";
+          const pctTl = (p1a > 0) ? ((p1m / p1a) * 100).toFixed(1) : "0.0";
+
+          record.matches.push({
+            matchDate,
+            round: round,
+            phaseType: currentPhase,
+            rival: rivalName,
+            rivalFull: rivalName,
+            rivalShort: rivalName.substring(0, 3).toUpperCase(),
+            minutes: player.minFormatted || "0:00",
+            pts: parseInt(player.pts || 0),
+            t2i: p2a,
+            t2c: p2m,
+            pct2,
+            t3i: p3a,
+            t3c: p3m,
+            pct3,
+            tli: p1a,
+            tlc: p1m,
+            pctTl,
+            ro: parseInt(player.ro || 0),
+            rd: parseInt(player.rd || 0),
+            rt: parseInt(player.rt || 0),
+            as: parseInt(player.assist || 0),
+            br: parseInt(player.st || 0),
+            bp: parseInt(player.to || 0),
+            tp: parseInt(player.bs || 0),
+            fc: parseInt(player.pf || 0),
+            va: parseInt(player.val || 0),
+            pm: parseInt(player.pllss || 0),
+            teamPoints: teamAPoints,
+            rivalPoints: teamBPoints,
+            resultado: teamAPoints > teamBPoints ? "G" : "P",
+            marcador: `${teamAPoints}-${teamBPoints}`
+          });
+        });
+      });
+
+      // --- Jugadores del equipo B ---
+      (teamB.PLAYER || []).forEach((player) => {
+        const teamName = teamBName;
+        teamSet.add(teamName);
+
+        const rivalName = teamAName;
+
+        const p2a = parseInt(player.p2a || 0);
+        const p2m = parseInt(player.p2m || 0);
+        const p3a = parseInt(player.p3a || 0);
+        const p3m = parseInt(player.p3m || 0);
+        const p1a = parseInt(player.p1a || 0);
+        const p1m = parseInt(player.p1m || 0);
+
+        // Crear IDs únicos para cada fase y total
+        const totalId = `${player.id}-${teamName}-${comp}-total`;
+        const groupPhaseId = `${player.id}-${teamName}-${comp}-grupos`;
+        const playoffsId = `${player.id}-${teamName}-${comp}-playoffs`;
+
+        // Inicializar registros si no existen
+        [totalId, groupPhaseId, playoffsId].forEach(id => {
+          if (!playersMap.has(id)) {
+            playersMap.set(id, {
+              dorsal: player.no || "",
+              playerPhoto: player.logo || "https://via.placeholder.com/50",
+              playerName: player.name || "Desconocido",
+              teamName,
+              competition: comp,
+              round: round,
+              phaseType: id.endsWith('total') ? "" : (id.endsWith('grupos') ? "Fase de Grupos" : "Playoffs"),
+              gender: genero,
+              games: 0,
+              seconds: 0,
+              pts: 0,
+              t2i: 0,
+              t2c: 0,
+              t3i: 0,
+              t3c: 0,
+              tli: 0,
+              tlc: 0,
+              ro: 0,
+              rd: 0,
+              rt: 0,
+              as: 0,
+              br: 0,
+              bp: 0,
+              tp: 0,
+              fc: 0,
+              va: 0,
+              pm: 0,
+              matches: []
+            });
+          }
+        });
+
+        // Actualizar estadísticas en el registro total y de fase
+        const totalRecord = playersMap.get(totalId);
+        const phaseRecord = playersMap.get(currentPhase === "Fase de Grupos" ? groupPhaseId : playoffsId);
+
+        [totalRecord, phaseRecord].forEach(record => {
+          record.games += 1;
+          record.seconds += minutesToSeconds(player.minFormatted || "0:00");
+
+          record.pts += parseInt(player.pts || 0);
+          record.t2i += p2a;
+          record.t2c += p2m;
+          record.t3i += p3a;
+          record.t3c += p3m;
+          record.tli += p1a;
+          record.tlc += p1m;
+          record.ro += parseInt(player.ro || 0);
+          record.rd += parseInt(player.rd || 0);
+          record.rt += parseInt(player.rt || 0);
+          record.as += parseInt(player.assist || 0);
+          record.br += parseInt(player.st || 0);
+          record.bp += parseInt(player.to || 0);
+          record.tp += parseInt(player.bs || 0);
+          record.fc += parseInt(player.pf || 0);
+          record.va += parseInt(player.val || 0);
+          record.pm += parseInt(player.pllss || 0);
+
+          const pct2 = (p2a > 0) ? ((p2m / p2a) * 100).toFixed(1) : "0.0";
+          const pct3 = (p3a > 0) ? ((p3m / p3a) * 100).toFixed(1) : "0.0";
+          const pctTl = (p1a > 0) ? ((p1m / p1a) * 100).toFixed(1) : "0.0";
+
+          record.matches.push({
+            matchDate,
+            round: round,
+            phaseType: currentPhase,
+            rival: rivalName,
+            rivalFull: rivalName,
+            rivalShort: rivalName.substring(0, 3).toUpperCase(),
+            minutes: player.minFormatted || "0:00",
+            pts: parseInt(player.pts || 0),
+            t2i: p2a,
+            t2c: p2m,
+            pct2,
+            t3i: p3a,
+            t3c: p3m,
+            pct3,
+            tli: p1a,
+            tlc: p1m,
+            pctTl,
+            ro: parseInt(player.ro || 0),
+            rd: parseInt(player.rd || 0),
+            rt: parseInt(player.rt || 0),
+            as: parseInt(player.assist || 0),
+            br: parseInt(player.st || 0),
+            bp: parseInt(player.to || 0),
+            tp: parseInt(player.bs || 0),
+            fc: parseInt(player.pf || 0),
+            va: parseInt(player.val || 0),
+            pm: parseInt(player.pllss || 0),
+            teamPoints: teamBPoints,
+            rivalPoints: teamAPoints,
+            resultado: teamBPoints > teamAPoints ? "G" : "P",
+            marcador: `${teamBPoints}-${teamAPoints}`
           });
         });
       });
@@ -497,6 +633,7 @@ function toggleMatchDetails(cell, player) {
       <tr>
         <th data-sort="date">Fecha</th>
         <th data-sort="rival">Rival</th>
+        <th data-sort="resultado">Resultado</th>
         <th data-sort="min">MIN</th>
         <th data-sort="pts">PTS</th>
         <th data-sort="t2c">T2C</th>
@@ -561,10 +698,14 @@ function toggleMatchDetails(cell, player) {
     
     const tbody = document.createElement("tbody");
     player.matches.forEach(match => {
+      const resultadoStr = `<span style="color:${match.resultado === 'G' ? 'green' : 'red'};font-weight:bold">${match.resultado}</span> ${match.marcador}`;
+      const rivalShort = match.rivalShort || (match.rival ? match.rival.substring(0, 3).toUpperCase() : "");
+      const rivalFull = match.rivalFull || match.rival || "";
       const matchRow = document.createElement("tr");
       matchRow.innerHTML = `
         <td data-sort="date" data-value="${match.matchDate}">${match.matchDate}</td>
-        <td data-sort="rival" data-value="${match.rival}">${match.rival}</td>
+        <td data-sort="rival" data-value="${rivalShort}" title="${rivalFull}">${rivalShort}</td>
+        <td data-sort="resultado" data-value="${match.resultado}">${resultadoStr}</td>
         <td data-sort="min" data-value="${minutesToSeconds(match.minutes)}">${match.minutes}</td>
         <td data-sort="pts" data-value="${match.pts}" ${match.pts === maxValues.pts ? 'class="max-value"' : ''}>${match.pts}</td>
         <td data-sort="t2c" data-value="${match.t2c}" ${match.t2c === maxValues.t2c ? 'class="max-value"' : ''}>${match.t2c}</td>
