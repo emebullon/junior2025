@@ -345,6 +345,10 @@
     min-width: 30px;
     text-align: right;
   }
+  .arrow {
+    color: white;
+    font-size: 1em;
+  }
   .match-footer {
     display: flex;
     justify-content: space-between;
