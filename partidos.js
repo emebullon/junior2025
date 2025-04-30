@@ -174,10 +174,17 @@ function createMatchCard(match) {
   card.setAttribute("data-match-date", dateStr);
   card.setAttribute("data-competition", match.competition);
 
-  // Cabecera
+  // Cambiar el nombre de la competición SOLO para la cabecera de la tarjeta
+  let competitionName = match.competition;
+  if (competitionName === 'C ESP CLUBES JR FEM') {
+    competitionName = 'CEC JR Femenino';
+  }
+  if (competitionName === 'C ESP CLUBES JR MASC') {
+    competitionName = 'CEC JR Masculino';
+  }
   const headerDiv = document.createElement("div");
   headerDiv.className = "match-header";
-  headerDiv.textContent = `${match.starttime} | ${match.competition}`;
+  headerDiv.textContent = `${match.starttime} | ${competitionName}`;
 
   // Equipos
   const teamsDiv = document.createElement("div");
@@ -197,13 +204,6 @@ function createMatchCard(match) {
   teamAInfo.appendChild(teamALogoImg);
   teamAInfo.appendChild(teamANameSpan);
 
-  const teamAScoreSpan = document.createElement("span");
-  teamAScoreSpan.className = "team-score";
-  teamAScoreSpan.textContent = match.teamAPts;
-
-  teamARow.appendChild(teamAInfo);
-  teamARow.appendChild(teamAScoreSpan);
-
   // Equipo B
   const teamBRow = document.createElement("div");
   teamBRow.className = "team-row";
@@ -218,20 +218,32 @@ function createMatchCard(match) {
   teamBInfo.appendChild(teamBLogoImg);
   teamBInfo.appendChild(teamBNameSpan);
 
+  // Marcadores
+  const teamAScore = parseInt(match.teamAPts, 10);
+  const teamBScore = parseInt(match.teamBPts, 10);
+
+  const teamAScoreSpan = document.createElement("span");
+  teamAScoreSpan.className = "team-score";
+  teamAScoreSpan.textContent = match.teamAPts;
+
   const teamBScoreSpan = document.createElement("span");
   teamBScoreSpan.className = "team-score";
   teamBScoreSpan.textContent = match.teamBPts;
 
+  // Marcar ganador
+  if (!isNaN(teamAScore) && !isNaN(teamBScore)) {
+    if (teamAScore > teamBScore) {
+      teamAScoreSpan.classList.add("winner");
+    } else if (teamBScore > teamAScore) {
+      teamBScoreSpan.classList.add("winner");
+    }
+  }
+
+  teamARow.appendChild(teamAInfo);
+  teamARow.appendChild(teamAScoreSpan);
+
   teamBRow.appendChild(teamBInfo);
   teamBRow.appendChild(teamBScoreSpan);
-  
-  // 👉 Winner logic
-  if (parseInt(match.teamAPts) > parseInt(match.teamBPts)) {
-    teamAScoreSpan.innerHTML = `<span class="arrow">▶ </span><span class="score-number">${match.teamAPts}</span>`;
-  } else if (parseInt(match.teamBPts) > parseInt(match.teamAPts)) {
-    teamBScoreSpan.innerHTML = `<span class="arrow">▶ </span><span class="score-number">${match.teamBPts}</span>`;
-  }
-  // End of winner logic
 
   teamsDiv.appendChild(teamARow);
   teamsDiv.appendChild(teamBRow);
@@ -436,7 +448,13 @@ function generateCompetitionTabs(competitions) {
   competitions.forEach(comp => {
     const btn = document.createElement("button");
     btn.className = "competition-tab";
-    btn.textContent = comp;
+    if (comp === 'C ESP CLUBES JR MASC') {
+      btn.textContent = 'Campeonato de España Clubes JR Masculino';
+    } else if (comp === 'C ESP CLUBES JR FEM') {
+      btn.textContent = 'Campeonato de España Clubes JR Femenino';
+    } else {
+      btn.textContent = comp;
+    }
     btn.dataset.competition = comp;
     competitionsBar.appendChild(btn);
   });
@@ -445,9 +463,7 @@ function generateCompetitionTabs(competitions) {
     btn.addEventListener("click", () => {
       competitionsBar.querySelectorAll(".competition-tab").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      // Guardamos la competición seleccionada
       selectedCompetition = btn.dataset.competition || "";
-      // Aplicamos todos los filtros
       applyAllFilters();
     });
   });

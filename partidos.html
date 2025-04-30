@@ -31,7 +31,7 @@
               <span>Inicio</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="partidos.html">
               <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/basketball-outline.svg" alt="Icono Partidos">
               <span>Partidos</span>
@@ -49,7 +49,7 @@
               <span>Calendario</span>
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="rankings.html">
               <img src="https://raw.githubusercontent.com/emebullon/games/refs/heads/main/stats-chart-outline.svg" alt="Icono Rankings">
               <span>Rankings</span>
@@ -126,22 +126,30 @@
       <h3>Filtros</h3>
       <button class="close-filters" id="closeFiltersBtn">&times;</button>
     </div>
+    <div class="filters-active" id="filtersActive">
+      <!-- Aquí se mostrarán los filtros activos como chips -->
+    </div>
     <div class="filters-content">
       <div class="filter-section">
-        <h4>Tipo de Competición</h4>
+        <h4>🏆 Competición</h4>
         <ul id="competitionFilters">
-          <!-- Se generarán automáticamente -->
+          <li><label><input type="radio" name="competition" value=""> Todas</label></li>
+          <li><label><input type="radio" name="competition" value="C ESP CLUBES JR MASC"> C ESP CLUBES JR MASC</label></li>
+          <li><label><input type="radio" name="competition" value="C ESP CLUBES JR FEM"> C ESP CLUBES JR FEM</label></li>
         </ul>
       </div>
       <div class="filter-section">
-        <h4>Género</h4>
-        <ul>
-          <li data-gender="">Todos</li>
-          <li data-gender="masculino">Masculino</li>
-          <li data-gender="femenino">Femenino</li>
-          <li data-gender="chicos">Chicos</li>
-          <li data-gender="chicas">Chicas</li>
+        <h4>👦 Género</h4>
+        <ul id="genderFilters">
+          <li><label><input type="checkbox" name="gender" value="masculino"> Masculino</label></li>
+          <li><label><input type="checkbox" name="gender" value="femenino"> Femenino</label></li>
+          <li><label><input type="checkbox" name="gender" value="chicos"> Chicos</label></li>
+          <li><label><input type="checkbox" name="gender" value="chicas"> Chicas</label></li>
         </ul>
+      </div>
+      <div class="filter-section">
+        <h4>📅 Fecha</h4>
+        <input type="date" id="filterDate">
       </div>
     </div>
     <div class="filters-footer">
