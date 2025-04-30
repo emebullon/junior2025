@@ -271,6 +271,8 @@
     gap: 20px;
     width: 100%;
     padding: 10px;
+    align-items: start;
+    justify-content: center;
   }
   .match-card {
     background-color: rgba(255, 255, 255, 0.1);
@@ -281,6 +283,8 @@
     gap: 10px;
     transition: transform 0.2s ease, background-color 0.2s ease;
     min-height: 180px;
+    width: 100%;
+    margin: 0 auto;
   }
   .match-card:hover {
     transform: translateY(-2px);
@@ -323,11 +327,17 @@
     object-fit: contain;
   }
   .team-name {
-    font-weight: 500;
-    font-size: 0.95em;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;      /* Máximo 2 líneas */
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-word;
+    font-weight: bold;
+    font-size: 0.95em;
+    cursor: pointer;
+    text-align: left;           /* Opcional: alinear a la izquierda */
   }
   .team-score {
     font-size: 1.2em;
@@ -450,32 +460,23 @@
      =========================== */
   @media (min-width: 1400px) {
     .matches-list {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(350px, 1fr));
+      max-width: 1200px;
+      margin: 0 auto;
     }
   }
   @media (max-width: 1399px) and (min-width: 992px) {
     .matches-list {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(350px, 1fr));
+      max-width: 900px;
+      margin: 0 auto;
     }
   }
-  @media (max-width: 991px) and (min-width: 768px) {
+  @media (max-width: 991px) {
     .matches-list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .match-card {
-      min-height: 160px;
-    }
-  }
-  @media (max-width: 767px) {
-    .matches-list {
-      grid-template-columns: 1fr;
-    }
-    .match-card {
-      min-height: 150px;
-    }
-    .team-logo {
-      width: 30px;
-      height: 30px;
+      grid-template-columns: minmax(350px, 1fr);
+      max-width: 450px;
+      margin: 0 auto;
     }
   }
   .match-indicator {
