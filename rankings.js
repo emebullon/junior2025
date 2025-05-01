@@ -568,6 +568,12 @@ function renderTable(data, mode = "totales") {
     const pct3 = player.t3i > 0 ? ((player.t3c / player.t3i) * 100).toFixed(1) : "0.0";
     const pctTl = player.tli > 0 ? ((player.tlc / player.tli) * 100).toFixed(1) : "0.0";
 
+    // Extraer solo los minutos del string "MM:SS"
+    const minutesPlayed = parseInt(minutes.split(':')[0]);
+    
+    // Calcular el impacto
+    const impact = minutesPlayed > 0 ? ((parseFloat(va) + parseFloat(pm)) / minutesPlayed).toFixed(2) : "0.00";
+
     // Abreviar nombre del equipo
     const teamName = player.teamName;
     const shortTeamName = teamName.length > 3 ? teamName.substring(0, 3) : teamName;
@@ -600,6 +606,7 @@ function renderTable(data, mode = "totales") {
       <td data-col="fc">${fc}</td>
       <td data-col="va">${va}</td>
       <td data-col="pm">${pm}</td>
+      <td data-col="imp">${impact}</td>
       <td class="games-cell" onclick="toggleMatchDetails(this, ${JSON.stringify(player).replace(/"/g, '&quot;')})">${player.games}</td>
     `;
 
@@ -618,7 +625,7 @@ function toggleMatchDetails(cell, player) {
     detailsRow.className = "details-row";
     
     const detailsCell = document.createElement("td");
-    detailsCell.colSpan = 27;
+    detailsCell.colSpan = 28;
     
     const detailsTable = document.createElement("table");
     detailsTable.className = "match-details-table";
@@ -671,6 +678,7 @@ function toggleMatchDetails(cell, player) {
         <th data-sort="fc">FC</th>
         <th data-sort="va">VA</th>
         <th data-sort="pm">+/-</th>
+        <th data-sort="imp">IMP</th>
       </tr>
     `;
 
@@ -732,6 +740,11 @@ function toggleMatchDetails(cell, player) {
       const resultadoStr = `<span style="color:${match.resultado === 'G' ? 'green' : 'red'};font-weight:bold">${match.resultado}</span> ${match.marcador}`;
       const rivalShort = match.rivalShort || (match.rival ? match.rival.substring(0, 3).toUpperCase() : "");
       const rivalFull = match.rivalFull || match.rival || "";
+      
+      // Calcular el impacto
+      const minutes = parseInt(match.minutes.split(':')[0]);
+      const impact = minutes > 0 ? ((match.va + match.pm) / minutes).toFixed(2) : "0.00";
+      
       const matchRow = document.createElement("tr");
       matchRow.innerHTML = `
         <td data-sort="date" data-value="${match.matchDate}">${match.matchDate}</td>
@@ -758,6 +771,7 @@ function toggleMatchDetails(cell, player) {
         <td data-sort="fc" data-value="${match.fc}" ${match.fc === maxValues.fc ? 'class="max-value"' : ''}>${match.fc}</td>
         <td data-sort="va" data-value="${match.va}" ${match.va === maxValues.va ? 'class="max-value"' : ''}>${match.va}</td>
         <td data-sort="pm" data-value="${match.pm}" ${match.pm === maxValues.pm ? 'class="max-value"' : ''}>${match.pm}</td>
+        <td data-sort="imp" data-value="${impact}">${impact}</td>
       `;
       tbody.appendChild(matchRow);
     });
@@ -843,6 +857,12 @@ function getSortValue(obj, colKey, mode) {
     }
     return obj[colKey] / obj.games;
   }
+
+  if (colKey === 'imp') {
+    const minutes = parseInt(secondsToMinutes(obj.seconds).split(':')[0]);
+    return minutes > 0 ? (obj.va + obj.pm) / minutes : 0;
+  }
+
   return obj[colKey];
 }
 
