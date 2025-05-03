@@ -27,7 +27,7 @@
                 "pts": "75",
                 "fouls": null,
                 "id": "965322",
-                "name": "SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA",
+                "name": "GRAN CANARIA MASPALOMAS COSTA CANARIA",
                 "logo": "https://imagenes.feb.es/imagen.aspx?i=965322&ti=1",
                 "teamCode": "35000103",
                 "clubCode": "350001"
@@ -948,7 +948,7 @@
                     }
                 ],
                 "id": "965322",
-                "name": "SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA",
+                "name": "GRAN CANARIA MASPALOMAS COSTA CANARIA",
                 "logo": "https://imagenes.feb.es/imagen.aspx?i=965322&ti=1",
                 "teamCode": "35000103",
                 "clubCode": "350001"
@@ -1033,7 +1033,7 @@
                 "pts": "75",
                 "fouls": "21",
                 "id": "965322",
-                "name": "SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA",
+                "name": "GRAN CANARIA MASPALOMAS COSTA CANARIA",
                 "logo": "https://imagenes.feb.es/imagen.aspx?i=965322&ti=1",
                 "teamCode": "35000103",
                 "clubCode": "350001"
@@ -1130,7 +1130,7 @@
             },
             {
                 "num": "537",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: FALTA Personal (Faltas: 3. Faltas de equipo: 21). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: FALTA Personal (Faltas: 3. Faltas de equipo: 21). Tiros libres: 2",
                 "team": "2",
                 "time": "00:06",
                 "deleted": null,
@@ -1208,7 +1208,7 @@
             },
             {
                 "num": "534",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "00:20",
                 "deleted": null,
@@ -1234,7 +1234,7 @@
             },
             {
                 "num": "533",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "00:20",
                 "deleted": null,
@@ -1338,7 +1338,7 @@
             },
             {
                 "num": "529",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: FALTA Personal (Faltas: 2. Faltas de equipo: 20). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: FALTA Personal (Faltas: 2. Faltas de equipo: 20). Tiros libres: 2",
                 "team": "2",
                 "time": "00:20",
                 "deleted": null,
@@ -1364,7 +1364,7 @@
             },
             {
                 "num": "528",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ASISTENCIA (Asistencias: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ASISTENCIA (Asistencias: 3)",
                 "team": "2",
                 "time": "00:24",
                 "deleted": null,
@@ -1390,7 +1390,7 @@
             },
             {
                 "num": "527",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 ANOTADO (Puntos: 11)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 ANOTADO (Puntos: 11)",
                 "team": "2",
                 "time": "00:24",
                 "deleted": null,
@@ -1416,7 +1416,7 @@
             },
             {
                 "num": "526",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ROBO (Robos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ROBO (Robos: 2)",
                 "team": "2",
                 "time": "00:31",
                 "deleted": null,
@@ -1468,7 +1468,7 @@
             },
             {
                 "num": "524",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 1 ANOTADO (Puntos: 11)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 1 ANOTADO (Puntos: 11)",
                 "team": "2",
                 "time": "00:32",
                 "deleted": null,
@@ -1494,7 +1494,7 @@
             },
             {
                 "num": "523",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 1 ANOTADO (Puntos: 10)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 1 ANOTADO (Puntos: 10)",
                 "team": "2",
                 "time": "00:32",
                 "deleted": null,
@@ -1650,7 +1650,7 @@
             },
             {
                 "num": "517",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: FALTA Personal (Faltas: 2. Faltas de equipo: 19). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: FALTA Personal (Faltas: 2. Faltas de equipo: 19). Tiros libres: 2",
                 "team": "2",
                 "time": "00:50",
                 "deleted": null,
@@ -1676,7 +1676,7 @@
             },
             {
                 "num": "516",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 18)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 18)",
                 "team": "2",
                 "time": "00:50",
                 "deleted": null,
@@ -1702,7 +1702,7 @@
             },
             {
                 "num": "515",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 9)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 9)",
                 "team": "2",
                 "time": "00:50",
                 "deleted": null,
@@ -1728,7 +1728,7 @@
             },
             {
                 "num": "514",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "00:50",
                 "deleted": null,
@@ -1754,7 +1754,7 @@
             },
             {
                 "num": "513",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. DENIZ AGULLO: ROBO (Robos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. DENIZ AGULLO: ROBO (Robos: 1)",
                 "team": "2",
                 "time": "00:50",
                 "deleted": null,
@@ -1884,7 +1884,7 @@
             },
             {
                 "num": "508",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. DENIZ AGULLO: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. DENIZ AGULLO: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "00:50",
                 "deleted": null,
@@ -1988,7 +1988,7 @@
             },
             {
                 "num": "504",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "01:12",
                 "deleted": null,
@@ -2014,7 +2014,7 @@
             },
             {
                 "num": "503",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. DENIZ AGULLO: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. DENIZ AGULLO: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "01:12",
                 "deleted": null,
@@ -2092,7 +2092,7 @@
             },
             {
                 "num": "500",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 ANOTADO (Puntos: 9)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 ANOTADO (Puntos: 9)",
                 "team": "2",
                 "time": "01:34",
                 "deleted": null,
@@ -2170,7 +2170,7 @@
             },
             {
                 "num": "497",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "01:46",
                 "deleted": null,
@@ -2196,7 +2196,7 @@
             },
             {
                 "num": "496",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "01:46",
                 "deleted": null,
@@ -2222,7 +2222,7 @@
             },
             {
                 "num": "495",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 5. Faltas de equipo: 18). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 5. Faltas de equipo: 18). Tiros libres: 2",
                 "team": "2",
                 "time": "01:46",
                 "deleted": null,
@@ -2248,7 +2248,7 @@
             },
             {
                 "num": "494",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: ASISTENCIA (Asistencias: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: ASISTENCIA (Asistencias: 2)",
                 "team": "2",
                 "time": "01:50",
                 "deleted": null,
@@ -2274,7 +2274,7 @@
             },
             {
                 "num": "493",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 16)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 16)",
                 "team": "2",
                 "time": "01:50",
                 "deleted": null,
@@ -2430,7 +2430,7 @@
             },
             {
                 "num": "487",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "02:22",
                 "deleted": null,
@@ -2482,7 +2482,7 @@
             },
             {
                 "num": "485",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 ANOTADO (Puntos: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 ANOTADO (Puntos: 7)",
                 "team": "2",
                 "time": "02:39",
                 "deleted": null,
@@ -2560,7 +2560,7 @@
             },
             {
                 "num": "482",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: FALTA Personal (Faltas: 3. Faltas de equipo: 17). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: FALTA Personal (Faltas: 3. Faltas de equipo: 17). Tiros libres: 2",
                 "team": "2",
                 "time": "02:57",
                 "deleted": null,
@@ -2612,7 +2612,7 @@
             },
             {
                 "num": "480",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "03:17",
                 "deleted": null,
@@ -2690,7 +2690,7 @@
             },
             {
                 "num": "477",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: FALTA Personal (Faltas: 1. Faltas de equipo: 16). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: FALTA Personal (Faltas: 1. Faltas de equipo: 16). Tiros libres: 2",
                 "team": "2",
                 "time": "03:38",
                 "deleted": null,
@@ -2716,7 +2716,7 @@
             },
             {
                 "num": "476",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "03:58",
                 "deleted": null,
@@ -2794,7 +2794,7 @@
             },
             {
                 "num": "473",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "03:58",
                 "deleted": null,
@@ -2820,7 +2820,7 @@
             },
             {
                 "num": "472",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 14)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 14)",
                 "team": "2",
                 "time": "03:58",
                 "deleted": null,
@@ -2846,7 +2846,7 @@
             },
             {
                 "num": "471",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 13)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 13)",
                 "team": "2",
                 "time": "03:58",
                 "deleted": null,
@@ -2872,7 +2872,7 @@
             },
             {
                 "num": "470",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "03:58",
                 "deleted": null,
@@ -2898,7 +2898,7 @@
             },
             {
                 "num": "469",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "03:58",
                 "deleted": null,
@@ -2950,7 +2950,7 @@
             },
             {
                 "num": "467",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 10)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 10)",
                 "team": "2",
                 "time": "04:05",
                 "deleted": null,
@@ -3106,7 +3106,7 @@
             },
             {
                 "num": "461",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "04:13",
                 "deleted": null,
@@ -3132,7 +3132,7 @@
             },
             {
                 "num": "460",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "04:13",
                 "deleted": null,
@@ -3158,7 +3158,7 @@
             },
             {
                 "num": "459",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "04:13",
                 "deleted": null,
@@ -3184,7 +3184,7 @@
             },
             {
                 "num": "458",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "04:13",
                 "deleted": null,
@@ -3262,7 +3262,7 @@
             },
             {
                 "num": "455",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
                 "team": "2",
                 "time": "04:13",
                 "deleted": null,
@@ -3314,7 +3314,7 @@
             },
             {
                 "num": "453",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "04:33",
                 "deleted": null,
@@ -3392,7 +3392,7 @@
             },
             {
                 "num": "450",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 ANOTADO (Puntos: 10)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 ANOTADO (Puntos: 10)",
                 "team": "2",
                 "time": "05:16",
                 "deleted": null,
@@ -3470,7 +3470,7 @@
             },
             {
                 "num": "447",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: PÉRDIDA (Pérdidas: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: PÉRDIDA (Pérdidas: 2)",
                 "team": "2",
                 "time": "05:51",
                 "deleted": null,
@@ -3574,7 +3574,7 @@
             },
             {
                 "num": "443",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 FALLADO",
                 "team": "2",
                 "time": "06:15",
                 "deleted": null,
@@ -3600,7 +3600,7 @@
             },
             {
                 "num": "442",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 ANOTADO (Puntos: 9)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 ANOTADO (Puntos: 9)",
                 "team": "2",
                 "time": "06:15",
                 "deleted": null,
@@ -3704,7 +3704,7 @@
             },
             {
                 "num": "438",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 ANOTADO (Puntos: 8)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 ANOTADO (Puntos: 8)",
                 "team": "2",
                 "time": "06:29",
                 "deleted": null,
@@ -3730,7 +3730,7 @@
             },
             {
                 "num": "437",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 ANOTADO (Puntos: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 1 ANOTADO (Puntos: 7)",
                 "team": "2",
                 "time": "06:29",
                 "deleted": null,
@@ -4016,7 +4016,7 @@
             },
             {
                 "num": "426",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "07:18",
                 "deleted": null,
@@ -4042,7 +4042,7 @@
             },
             {
                 "num": "425",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: REBOTE (Rebotes: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: REBOTE (Rebotes: 2)",
                 "team": "2",
                 "time": "07:29",
                 "deleted": null,
@@ -4094,7 +4094,7 @@
             },
             {
                 "num": "423",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 12)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 12)",
                 "team": "2",
                 "time": "07:37",
                 "deleted": null,
@@ -4198,7 +4198,7 @@
             },
             {
                 "num": "419",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "08:00",
                 "deleted": null,
@@ -4224,7 +4224,7 @@
             },
             {
                 "num": "418",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "08:00",
                 "deleted": null,
@@ -4250,7 +4250,7 @@
             },
             {
                 "num": "417",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "08:00",
                 "deleted": null,
@@ -4276,7 +4276,7 @@
             },
             {
                 "num": "416",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "08:00",
                 "deleted": null,
@@ -4302,7 +4302,7 @@
             },
             {
                 "num": "415",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
                 "team": "2",
                 "time": "08:00",
                 "deleted": null,
@@ -4328,7 +4328,7 @@
             },
             {
                 "num": "414",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 4. Faltas de equipo: 15). Tiros libres: 0",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 4. Faltas de equipo: 15). Tiros libres: 0",
                 "team": "2",
                 "time": "08:02",
                 "deleted": null,
@@ -4380,7 +4380,7 @@
             },
             {
                 "num": "412",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "08:08",
                 "deleted": null,
@@ -4510,7 +4510,7 @@
             },
             {
                 "num": "407",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "08:52",
                 "deleted": null,
@@ -4536,7 +4536,7 @@
             },
             {
                 "num": "406",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 9)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 9)",
                 "team": "2",
                 "time": "09:00",
                 "deleted": null,
@@ -4614,7 +4614,7 @@
             },
             {
                 "num": "403",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "09:14",
                 "deleted": null,
@@ -4744,7 +4744,7 @@
             },
             {
                 "num": "398",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 4. Faltas de equipo: 14). Tiros libres: 1",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 4. Faltas de equipo: 14). Tiros libres: 1",
                 "team": "2",
                 "time": "09:47",
                 "deleted": null,
@@ -4952,7 +4952,7 @@
             },
             {
                 "num": "390",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 ANOTADO (Puntos: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 ANOTADO (Puntos: 3)",
                 "team": "2",
                 "time": "00:38",
                 "deleted": null,
@@ -4978,7 +4978,7 @@
             },
             {
                 "num": "389",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 7)",
                 "team": "2",
                 "time": "00:38",
                 "deleted": null,
@@ -5004,7 +5004,7 @@
             },
             {
                 "num": "388",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "00:38",
                 "deleted": null,
@@ -5030,7 +5030,7 @@
             },
             {
                 "num": "387",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "00:47",
                 "deleted": null,
@@ -5108,7 +5108,7 @@
             },
             {
                 "num": "384",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 1 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 1 FALLADO",
                 "team": "2",
                 "time": "01:06",
                 "deleted": null,
@@ -5134,7 +5134,7 @@
             },
             {
                 "num": "383",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 1 ANOTADO (Puntos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 1 ANOTADO (Puntos: 1)",
                 "team": "2",
                 "time": "01:06",
                 "deleted": null,
@@ -5186,7 +5186,7 @@
             },
             {
                 "num": "381",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) REBOTE (Rebotes: 29)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) REBOTE (Rebotes: 29)",
                 "team": "2",
                 "time": "01:18",
                 "deleted": null,
@@ -5264,7 +5264,7 @@
             },
             {
                 "num": "378",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "01:32",
                 "deleted": null,
@@ -5290,7 +5290,7 @@
             },
             {
                 "num": "377",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 6)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 6)",
                 "team": "2",
                 "time": "01:32",
                 "deleted": null,
@@ -5316,7 +5316,7 @@
             },
             {
                 "num": "376",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "01:32",
                 "deleted": null,
@@ -5368,7 +5368,7 @@
             },
             {
                 "num": "374",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 8)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 8)",
                 "team": "2",
                 "time": "01:49",
                 "deleted": null,
@@ -5446,7 +5446,7 @@
             },
             {
                 "num": "371",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "02:18",
                 "deleted": null,
@@ -5472,7 +5472,7 @@
             },
             {
                 "num": "370",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 4)",
                 "team": "2",
                 "time": "02:24",
                 "deleted": null,
@@ -5524,7 +5524,7 @@
             },
             {
                 "num": "368",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "02:31",
                 "deleted": null,
@@ -5550,7 +5550,7 @@
             },
             {
                 "num": "367",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 7)",
                 "team": "2",
                 "time": "02:42",
                 "deleted": null,
@@ -5628,7 +5628,7 @@
             },
             {
                 "num": "364",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 3. Faltas de equipo: 13). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 3. Faltas de equipo: 13). Tiros libres: 2",
                 "team": "2",
                 "time": "02:43",
                 "deleted": null,
@@ -5654,7 +5654,7 @@
             },
             {
                 "num": "363",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 3 ANOTADO (Puntos: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 3 ANOTADO (Puntos: 5)",
                 "team": "2",
                 "time": "02:54",
                 "deleted": null,
@@ -5758,7 +5758,7 @@
             },
             {
                 "num": "359",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "03:34",
                 "deleted": null,
@@ -5784,7 +5784,7 @@
             },
             {
                 "num": "358",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "03:34",
                 "deleted": null,
@@ -5862,7 +5862,7 @@
             },
             {
                 "num": "355",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: ASISTENCIA (Asistencias: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: ASISTENCIA (Asistencias: 1)",
                 "team": "2",
                 "time": "03:50",
                 "deleted": null,
@@ -5888,7 +5888,7 @@
             },
             {
                 "num": "354",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 ANOTADO (Puntos: 6)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 ANOTADO (Puntos: 6)",
                 "team": "2",
                 "time": "03:50",
                 "deleted": null,
@@ -5914,7 +5914,7 @@
             },
             {
                 "num": "353",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "03:57",
                 "deleted": null,
@@ -6044,7 +6044,7 @@
             },
             {
                 "num": "348",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Personal (Faltas: 4. Faltas de equipo: 12). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Personal (Faltas: 4. Faltas de equipo: 12). Tiros libres: 2",
                 "team": "2",
                 "time": "04:09",
                 "deleted": null,
@@ -6070,7 +6070,7 @@
             },
             {
                 "num": "347",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 7)",
                 "team": "2",
                 "time": "04:12",
                 "deleted": null,
@@ -6252,7 +6252,7 @@
             },
             {
                 "num": "340",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "04:50",
                 "deleted": null,
@@ -6434,7 +6434,7 @@
             },
             {
                 "num": "333",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 3. Faltas de equipo: 11). Tiros libres: 0",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 3. Faltas de equipo: 11). Tiros libres: 0",
                 "team": "2",
                 "time": "05:09",
                 "deleted": null,
@@ -6486,7 +6486,7 @@
             },
             {
                 "num": "331",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "05:26",
                 "deleted": null,
@@ -6512,7 +6512,7 @@
             },
             {
                 "num": "330",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 4)",
                 "team": "2",
                 "time": "05:31",
                 "deleted": null,
@@ -6564,7 +6564,7 @@
             },
             {
                 "num": "328",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: ASISTENCIA (Asistencias: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: ASISTENCIA (Asistencias: 2)",
                 "team": "2",
                 "time": "05:37",
                 "deleted": null,
@@ -6590,7 +6590,7 @@
             },
             {
                 "num": "327",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 10)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 10)",
                 "team": "2",
                 "time": "05:37",
                 "deleted": null,
@@ -6616,7 +6616,7 @@
             },
             {
                 "num": "326",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 6)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 6)",
                 "team": "2",
                 "time": "05:50",
                 "deleted": null,
@@ -6668,7 +6668,7 @@
             },
             {
                 "num": "324",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: FALTA Personal (Faltas: 2. Faltas de equipo: 10). Tiros libres: 0",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: FALTA Personal (Faltas: 2. Faltas de equipo: 10). Tiros libres: 0",
                 "team": "2",
                 "time": "06:10",
                 "deleted": null,
@@ -6694,7 +6694,7 @@
             },
             {
                 "num": "323",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 3)",
                 "team": "2",
                 "time": "06:19",
                 "deleted": null,
@@ -6772,7 +6772,7 @@
             },
             {
                 "num": "320",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 ANOTADO (Puntos: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 ANOTADO (Puntos: 4)",
                 "team": "2",
                 "time": "06:41",
                 "deleted": null,
@@ -6798,7 +6798,7 @@
             },
             {
                 "num": "319",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 5)",
                 "team": "2",
                 "time": "06:41",
                 "deleted": null,
@@ -6824,7 +6824,7 @@
             },
             {
                 "num": "318",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "06:41",
                 "deleted": null,
@@ -6954,7 +6954,7 @@
             },
             {
                 "num": "313",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 ANOTADO (Puntos: 6)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 ANOTADO (Puntos: 6)",
                 "team": "2",
                 "time": "07:00",
                 "deleted": null,
@@ -6980,7 +6980,7 @@
             },
             {
                 "num": "312",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 3)",
                 "team": "2",
                 "time": "07:05",
                 "deleted": null,
@@ -7032,7 +7032,7 @@
             },
             {
                 "num": "310",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 1 ANOTADO (Puntos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 1 ANOTADO (Puntos: 2)",
                 "team": "2",
                 "time": "07:07",
                 "deleted": null,
@@ -7058,7 +7058,7 @@
             },
             {
                 "num": "309",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 1 ANOTADO (Puntos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 1 ANOTADO (Puntos: 1)",
                 "team": "2",
                 "time": "07:07",
                 "deleted": null,
@@ -7266,7 +7266,7 @@
             },
             {
                 "num": "301",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Personal (Faltas: 3. Faltas de equipo: 9). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Personal (Faltas: 3. Faltas de equipo: 9). Tiros libres: 2",
                 "team": "2",
                 "time": "07:30",
                 "deleted": null,
@@ -7318,7 +7318,7 @@
             },
             {
                 "num": "299",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "07:45",
                 "deleted": null,
@@ -7370,7 +7370,7 @@
             },
             {
                 "num": "297",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 ANOTADO (Puntos: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 ANOTADO (Puntos: 4)",
                 "team": "2",
                 "time": "08:21",
                 "deleted": null,
@@ -7396,7 +7396,7 @@
             },
             {
                 "num": "296",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 2)",
                 "team": "2",
                 "time": "08:25",
                 "deleted": null,
@@ -7448,7 +7448,7 @@
             },
             {
                 "num": "294",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: ASISTENCIA (Asistencias: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: ASISTENCIA (Asistencias: 1)",
                 "team": "2",
                 "time": "08:31",
                 "deleted": null,
@@ -7474,7 +7474,7 @@
             },
             {
                 "num": "293",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 ANOTADO (Puntos: 8)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 ANOTADO (Puntos: 8)",
                 "team": "2",
                 "time": "08:31",
                 "deleted": null,
@@ -7500,7 +7500,7 @@
             },
             {
                 "num": "292",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) REBOTE (Rebotes: 23)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) REBOTE (Rebotes: 23)",
                 "team": "2",
                 "time": "08:47",
                 "deleted": null,
@@ -7630,7 +7630,7 @@
             },
             {
                 "num": "287",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "09:14",
                 "deleted": null,
@@ -7708,7 +7708,7 @@
             },
             {
                 "num": "284",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "09:46",
                 "deleted": null,
@@ -7760,7 +7760,7 @@
             },
             {
                 "num": "282",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -7838,7 +7838,7 @@
             },
             {
                 "num": "279",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. OCURTO MENDES: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -7890,7 +7890,7 @@
             },
             {
                 "num": "277",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -7942,7 +7942,7 @@
             },
             {
                 "num": "275",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -8046,7 +8046,7 @@
             },
             {
                 "num": "271",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "00:09",
                 "deleted": null,
@@ -8124,7 +8124,7 @@
             },
             {
                 "num": "268",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 ANOTADO (Puntos: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 ANOTADO (Puntos: 5)",
                 "team": "2",
                 "time": "00:27",
                 "deleted": null,
@@ -8150,7 +8150,7 @@
             },
             {
                 "num": "267",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: REBOTE (Rebotes: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: REBOTE (Rebotes: 3)",
                 "team": "2",
                 "time": "00:27",
                 "deleted": null,
@@ -8176,7 +8176,7 @@
             },
             {
                 "num": "266",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "00:27",
                 "deleted": null,
@@ -8306,7 +8306,7 @@
             },
             {
                 "num": "261",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 2. Faltas de equipo: 8). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 2. Faltas de equipo: 8). Tiros libres: 2",
                 "team": "2",
                 "time": "00:41",
                 "deleted": null,
@@ -8332,7 +8332,7 @@
             },
             {
                 "num": "260",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 1 ANOTADO (Puntos: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 1 ANOTADO (Puntos: 5)",
                 "team": "2",
                 "time": "00:51",
                 "deleted": null,
@@ -8358,7 +8358,7 @@
             },
             {
                 "num": "259",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 1 ANOTADO (Puntos: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 1 ANOTADO (Puntos: 4)",
                 "team": "2",
                 "time": "00:51",
                 "deleted": null,
@@ -8384,7 +8384,7 @@
             },
             {
                 "num": "258",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "00:51",
                 "deleted": null,
@@ -8462,7 +8462,7 @@
             },
             {
                 "num": "255",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "00:51",
                 "deleted": null,
@@ -8566,7 +8566,7 @@
             },
             {
                 "num": "251",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 6)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 6)",
                 "team": "2",
                 "time": "01:21",
                 "deleted": null,
@@ -8592,7 +8592,7 @@
             },
             {
                 "num": "250",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 8)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 8)",
                 "team": "2",
                 "time": "01:33",
                 "deleted": null,
@@ -8618,7 +8618,7 @@
             },
             {
                 "num": "249",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TAPÓN (Tapones: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TAPÓN (Tapones: 1)",
                 "team": "2",
                 "time": "01:33",
                 "deleted": null,
@@ -8670,7 +8670,7 @@
             },
             {
                 "num": "247",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 8)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 8)",
                 "team": "2",
                 "time": "01:45",
                 "deleted": null,
@@ -8696,7 +8696,7 @@
             },
             {
                 "num": "246",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 7)",
                 "team": "2",
                 "time": "01:45",
                 "deleted": null,
@@ -8852,7 +8852,7 @@
             },
             {
                 "num": "240",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "01:59",
                 "deleted": null,
@@ -8878,7 +8878,7 @@
             },
             {
                 "num": "239",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 7)",
                 "team": "2",
                 "time": "02:12",
                 "deleted": null,
@@ -8930,7 +8930,7 @@
             },
             {
                 "num": "237",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 6)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 6)",
                 "team": "2",
                 "time": "02:29",
                 "deleted": null,
@@ -8956,7 +8956,7 @@
             },
             {
                 "num": "236",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 5)",
                 "team": "2",
                 "time": "02:29",
                 "deleted": null,
@@ -8982,7 +8982,7 @@
             },
             {
                 "num": "235",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "02:29",
                 "deleted": null,
@@ -9008,7 +9008,7 @@
             },
             {
                 "num": "234",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "02:29",
                 "deleted": null,
@@ -9034,7 +9034,7 @@
             },
             {
                 "num": "233",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "02:29",
                 "deleted": null,
@@ -9060,7 +9060,7 @@
             },
             {
                 "num": "232",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "02:29",
                 "deleted": null,
@@ -9190,7 +9190,7 @@
             },
             {
                 "num": "227",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "02:57",
                 "deleted": null,
@@ -9242,7 +9242,7 @@
             },
             {
                 "num": "225",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 5)",
                 "team": "2",
                 "time": "03:25",
                 "deleted": null,
@@ -9268,7 +9268,7 @@
             },
             {
                 "num": "224",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 6)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 6)",
                 "team": "2",
                 "time": "03:30",
                 "deleted": null,
@@ -9346,7 +9346,7 @@
             },
             {
                 "num": "221",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ASISTENCIA (Asistencias: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ASISTENCIA (Asistencias: 2)",
                 "team": "2",
                 "time": "03:45",
                 "deleted": null,
@@ -9372,7 +9372,7 @@
             },
             {
                 "num": "220",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 ANOTADO (Puntos: 7)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 ANOTADO (Puntos: 7)",
                 "team": "2",
                 "time": "03:45",
                 "deleted": null,
@@ -9398,7 +9398,7 @@
             },
             {
                 "num": "219",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 5)",
                 "team": "2",
                 "time": "03:51",
                 "deleted": null,
@@ -9476,7 +9476,7 @@
             },
             {
                 "num": "216",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: PÉRDIDA (Pérdidas: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: PÉRDIDA (Pérdidas: 3)",
                 "team": "2",
                 "time": "03:59",
                 "deleted": null,
@@ -9502,7 +9502,7 @@
             },
             {
                 "num": "215",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 4)",
                 "team": "2",
                 "time": "04:04",
                 "deleted": null,
@@ -9554,7 +9554,7 @@
             },
             {
                 "num": "213",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 4)",
                 "team": "2",
                 "time": "04:17",
                 "deleted": null,
@@ -9580,7 +9580,7 @@
             },
             {
                 "num": "212",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 1 ANOTADO (Puntos: 3)",
                 "team": "2",
                 "time": "04:17",
                 "deleted": null,
@@ -9632,7 +9632,7 @@
             },
             {
                 "num": "210",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 2)",
                 "team": "2",
                 "time": "04:28",
                 "deleted": null,
@@ -9710,7 +9710,7 @@
             },
             {
                 "num": "207",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "04:46",
                 "deleted": null,
@@ -9736,7 +9736,7 @@
             },
             {
                 "num": "206",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "04:46",
                 "deleted": null,
@@ -9762,7 +9762,7 @@
             },
             {
                 "num": "205",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "04:46",
                 "deleted": null,
@@ -9788,7 +9788,7 @@
             },
             {
                 "num": "204",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "04:46",
                 "deleted": null,
@@ -9840,7 +9840,7 @@
             },
             {
                 "num": "202",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA)  Equipo: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA)  Equipo: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "04:51",
                 "deleted": null,
@@ -9866,7 +9866,7 @@
             },
             {
                 "num": "201",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "04:51",
                 "deleted": null,
@@ -9918,7 +9918,7 @@
             },
             {
                 "num": "199",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 4)",
                 "team": "2",
                 "time": "05:12",
                 "deleted": null,
@@ -9944,7 +9944,7 @@
             },
             {
                 "num": "198",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "05:12",
                 "deleted": null,
@@ -10074,7 +10074,7 @@
             },
             {
                 "num": "193",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 2. Faltas de equipo: 7). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 2. Faltas de equipo: 7). Tiros libres: 2",
                 "team": "2",
                 "time": "05:39",
                 "deleted": null,
@@ -10152,7 +10152,7 @@
             },
             {
                 "num": "190",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "05:53",
                 "deleted": null,
@@ -10178,7 +10178,7 @@
             },
             {
                 "num": "189",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "05:53",
                 "deleted": null,
@@ -10230,7 +10230,7 @@
             },
             {
                 "num": "187",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "05:58",
                 "deleted": null,
@@ -10308,7 +10308,7 @@
             },
             {
                 "num": "184",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
                 "team": "2",
                 "time": "06:20",
                 "deleted": null,
@@ -10334,7 +10334,7 @@
             },
             {
                 "num": "183",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: FALTA Personal (Faltas: 1. Faltas de equipo: 6). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: FALTA Personal (Faltas: 1. Faltas de equipo: 6). Tiros libres: 2",
                 "team": "2",
                 "time": "06:20",
                 "deleted": null,
@@ -10360,7 +10360,7 @@
             },
             {
                 "num": "182",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "06:24",
                 "deleted": null,
@@ -10386,7 +10386,7 @@
             },
             {
                 "num": "181",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "06:24",
                 "deleted": null,
@@ -10412,7 +10412,7 @@
             },
             {
                 "num": "180",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "06:27",
                 "deleted": null,
@@ -10490,7 +10490,7 @@
             },
             {
                 "num": "177",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 4)",
                 "team": "2",
                 "time": "07:00",
                 "deleted": null,
@@ -10568,7 +10568,7 @@
             },
             {
                 "num": "174",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "07:19",
                 "deleted": null,
@@ -10594,7 +10594,7 @@
             },
             {
                 "num": "173",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "07:19",
                 "deleted": null,
@@ -10620,7 +10620,7 @@
             },
             {
                 "num": "172",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 ANOTADO (Puntos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 ANOTADO (Puntos: 2)",
                 "team": "2",
                 "time": "07:19",
                 "deleted": null,
@@ -10646,7 +10646,7 @@
             },
             {
                 "num": "171",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 FALLADO",
                 "team": "2",
                 "time": "07:19",
                 "deleted": null,
@@ -10802,7 +10802,7 @@
             },
             {
                 "num": "165",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 5)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 5)",
                 "team": "2",
                 "time": "07:27",
                 "deleted": null,
@@ -10880,7 +10880,7 @@
             },
             {
                 "num": "162",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "07:41",
                 "deleted": null,
@@ -10958,7 +10958,7 @@
             },
             {
                 "num": "159",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ASISTENCIA (Asistencias: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ASISTENCIA (Asistencias: 1)",
                 "team": "2",
                 "time": "08:13",
                 "deleted": null,
@@ -10984,7 +10984,7 @@
             },
             {
                 "num": "158",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 2 ANOTADO (Puntos: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 2 ANOTADO (Puntos: 4)",
                 "team": "2",
                 "time": "08:13",
                 "deleted": null,
@@ -11010,7 +11010,7 @@
             },
             {
                 "num": "157",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: ROBO (Robos: 1)",
                 "team": "2",
                 "time": "08:18",
                 "deleted": null,
@@ -11062,7 +11062,7 @@
             },
             {
                 "num": "155",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 ANOTADO (Puntos: 2)",
                 "team": "2",
                 "time": "08:42",
                 "deleted": null,
@@ -11088,7 +11088,7 @@
             },
             {
                 "num": "154",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 4)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 4)",
                 "team": "2",
                 "time": "08:42",
                 "deleted": null,
@@ -11114,7 +11114,7 @@
             },
             {
                 "num": "153",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "08:42",
                 "deleted": null,
@@ -11192,7 +11192,7 @@
             },
             {
                 "num": "150",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "08:59",
                 "deleted": null,
@@ -11218,7 +11218,7 @@
             },
             {
                 "num": "149",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "08:59",
                 "deleted": null,
@@ -11244,7 +11244,7 @@
             },
             {
                 "num": "148",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "08:59",
                 "deleted": null,
@@ -11270,7 +11270,7 @@
             },
             {
                 "num": "147",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "08:59",
                 "deleted": null,
@@ -11296,7 +11296,7 @@
             },
             {
                 "num": "146",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: FALTA Personal (Faltas: 1. Faltas de equipo: 5). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: FALTA Personal (Faltas: 1. Faltas de equipo: 5). Tiros libres: 2",
                 "team": "2",
                 "time": "09:00",
                 "deleted": null,
@@ -11400,7 +11400,7 @@
             },
             {
                 "num": "142",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "09:17",
                 "deleted": null,
@@ -11426,7 +11426,7 @@
             },
             {
                 "num": "141",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 3)",
                 "team": "2",
                 "time": "09:38",
                 "deleted": null,
@@ -11504,7 +11504,7 @@
             },
             {
                 "num": "138",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 1. Faltas de equipo: 4). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: FALTA Personal (Faltas: 1. Faltas de equipo: 4). Tiros libres: 2",
                 "team": "2",
                 "time": "09:38",
                 "deleted": null,
@@ -11582,7 +11582,7 @@
             },
             {
                 "num": "135",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -11608,7 +11608,7 @@
             },
             {
                 "num": "134",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -11634,7 +11634,7 @@
             },
             {
                 "num": "133",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -11660,7 +11660,7 @@
             },
             {
                 "num": "132",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -11920,7 +11920,7 @@
             },
             {
                 "num": "122",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 ANOTADO (Puntos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 ANOTADO (Puntos: 1)",
                 "team": "2",
                 "time": "00:07",
                 "deleted": null,
@@ -11946,7 +11946,7 @@
             },
             {
                 "num": "121",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 1 FALLADO",
                 "team": "2",
                 "time": "00:07",
                 "deleted": null,
@@ -11998,7 +11998,7 @@
             },
             {
                 "num": "119",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 2)",
                 "team": "2",
                 "time": "00:19",
                 "deleted": null,
@@ -12102,7 +12102,7 @@
             },
             {
                 "num": "115",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "00:37",
                 "deleted": null,
@@ -12128,7 +12128,7 @@
             },
             {
                 "num": "114",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 3)",
                 "team": "2",
                 "time": "00:48",
                 "deleted": null,
@@ -12180,7 +12180,7 @@
             },
             {
                 "num": "112",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 3)",
                 "team": "2",
                 "time": "01:02",
                 "deleted": null,
@@ -12206,7 +12206,7 @@
             },
             {
                 "num": "111",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Ofensiva (Faltas: 2. Faltas de equipo: 3). Tiros libres: 0",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Ofensiva (Faltas: 2. Faltas de equipo: 3). Tiros libres: 0",
                 "team": "2",
                 "time": "01:02",
                 "deleted": null,
@@ -12232,7 +12232,7 @@
             },
             {
                 "num": "110",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: ROBO (Robos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: ROBO (Robos: 1)",
                 "team": "2",
                 "time": "01:06",
                 "deleted": null,
@@ -12284,7 +12284,7 @@
             },
             {
                 "num": "108",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: ASISTENCIA (Asistencias: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: ASISTENCIA (Asistencias: 1)",
                 "team": "2",
                 "time": "01:27",
                 "deleted": null,
@@ -12310,7 +12310,7 @@
             },
             {
                 "num": "107",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 ANOTADO (Puntos: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: TIRO DE 3 ANOTADO (Puntos: 3)",
                 "team": "2",
                 "time": "01:27",
                 "deleted": null,
@@ -12388,7 +12388,7 @@
             },
             {
                 "num": "104",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 1 ANOTADO (Puntos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 1 ANOTADO (Puntos: 2)",
                 "team": "2",
                 "time": "02:25",
                 "deleted": null,
@@ -12414,7 +12414,7 @@
             },
             {
                 "num": "103",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 1 ANOTADO (Puntos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 1 ANOTADO (Puntos: 1)",
                 "team": "2",
                 "time": "02:25",
                 "deleted": null,
@@ -12466,7 +12466,7 @@
             },
             {
                 "num": "101",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "02:58",
                 "deleted": null,
@@ -12544,7 +12544,7 @@
             },
             {
                 "num": "98",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "02:58",
                 "deleted": null,
@@ -12570,7 +12570,7 @@
             },
             {
                 "num": "97",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "02:58",
                 "deleted": null,
@@ -12596,7 +12596,7 @@
             },
             {
                 "num": "96",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) D. LLAVERO SANCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "02:58",
                 "deleted": null,
@@ -12674,7 +12674,7 @@
             },
             {
                 "num": "93",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. HERNANDEZ MARTINEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "02:58",
                 "deleted": null,
@@ -12700,7 +12700,7 @@
             },
             {
                 "num": "92",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Personal (Faltas: 1. Faltas de equipo: 2). Tiros libres: 2",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: FALTA Personal (Faltas: 1. Faltas de equipo: 2). Tiros libres: 2",
                 "team": "2",
                 "time": "02:59",
                 "deleted": null,
@@ -12752,7 +12752,7 @@
             },
             {
                 "num": "90",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "03:13",
                 "deleted": null,
@@ -12856,7 +12856,7 @@
             },
             {
                 "num": "86",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 2)",
                 "team": "2",
                 "time": "03:42",
                 "deleted": null,
@@ -12882,7 +12882,7 @@
             },
             {
                 "num": "85",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 2)",
                 "team": "2",
                 "time": "03:46",
                 "deleted": null,
@@ -12908,7 +12908,7 @@
             },
             {
                 "num": "84",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "03:46",
                 "deleted": null,
@@ -12934,7 +12934,7 @@
             },
             {
                 "num": "83",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: REBOTE (Rebotes: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: REBOTE (Rebotes: 2)",
                 "team": "2",
                 "time": "04:07",
                 "deleted": null,
@@ -13012,7 +13012,7 @@
             },
             {
                 "num": "80",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "04:23",
                 "deleted": null,
@@ -13142,7 +13142,7 @@
             },
             {
                 "num": "75",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "04:40",
                 "deleted": null,
@@ -13220,7 +13220,7 @@
             },
             {
                 "num": "72",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "05:07",
                 "deleted": null,
@@ -13246,7 +13246,7 @@
             },
             {
                 "num": "71",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: REBOTE (Rebotes: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: REBOTE (Rebotes: 2)",
                 "team": "2",
                 "time": "05:21",
                 "deleted": null,
@@ -13324,7 +13324,7 @@
             },
             {
                 "num": "68",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 3 FALLADO",
                 "team": "2",
                 "time": "05:32",
                 "deleted": null,
@@ -13350,7 +13350,7 @@
             },
             {
                 "num": "67",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: ROBO (Robos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: ROBO (Robos: 1)",
                 "team": "2",
                 "time": "05:47",
                 "deleted": null,
@@ -13402,7 +13402,7 @@
             },
             {
                 "num": "65",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: ASISTENCIA (Asistencias: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: ASISTENCIA (Asistencias: 1)",
                 "team": "2",
                 "time": "05:55",
                 "deleted": null,
@@ -13428,7 +13428,7 @@
             },
             {
                 "num": "64",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 3 ANOTADO (Puntos: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: TIRO DE 3 ANOTADO (Puntos: 3)",
                 "team": "2",
                 "time": "05:55",
                 "deleted": null,
@@ -13558,7 +13558,7 @@
             },
             {
                 "num": "59",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "06:09",
                 "deleted": null,
@@ -13584,7 +13584,7 @@
             },
             {
                 "num": "58",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "06:09",
                 "deleted": null,
@@ -13610,7 +13610,7 @@
             },
             {
                 "num": "57",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "06:09",
                 "deleted": null,
@@ -13636,7 +13636,7 @@
             },
             {
                 "num": "56",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "06:09",
                 "deleted": null,
@@ -13662,7 +13662,7 @@
             },
             {
                 "num": "55",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "06:09",
                 "deleted": null,
@@ -13740,7 +13740,7 @@
             },
             {
                 "num": "52",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "06:09",
                 "deleted": null,
@@ -13844,7 +13844,7 @@
             },
             {
                 "num": "48",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Sale de pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Sale de pista)",
                 "team": "2",
                 "time": "06:16",
                 "deleted": null,
@@ -13870,7 +13870,7 @@
             },
             {
                 "num": "47",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) A. MBENGUE SÁNCHEZ: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "06:16",
                 "deleted": null,
@@ -13896,7 +13896,7 @@
             },
             {
                 "num": "46",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) Tiempo muerto",
                 "team": "2",
                 "time": "06:16",
                 "deleted": null,
@@ -13974,7 +13974,7 @@
             },
             {
                 "num": "43",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: PÉRDIDA (Pérdidas: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: PÉRDIDA (Pérdidas: 2)",
                 "team": "2",
                 "time": "06:23",
                 "deleted": null,
@@ -14000,7 +14000,7 @@
             },
             {
                 "num": "42",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 3)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 3)",
                 "team": "2",
                 "time": "06:44",
                 "deleted": null,
@@ -14052,7 +14052,7 @@
             },
             {
                 "num": "40",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "06:58",
                 "deleted": null,
@@ -14078,7 +14078,7 @@
             },
             {
                 "num": "39",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 2)",
                 "team": "2",
                 "time": "07:05",
                 "deleted": null,
@@ -14104,7 +14104,7 @@
             },
             {
                 "num": "38",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TAPÓN (Tapones: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: TAPÓN (Tapones: 1)",
                 "team": "2",
                 "time": "07:05",
                 "deleted": null,
@@ -14156,7 +14156,7 @@
             },
             {
                 "num": "36",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ASISTENCIA (Asistencias: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ASISTENCIA (Asistencias: 1)",
                 "team": "2",
                 "time": "07:23",
                 "deleted": null,
@@ -14182,7 +14182,7 @@
             },
             {
                 "num": "35",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 ANOTADO (Puntos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 ANOTADO (Puntos: 2)",
                 "team": "2",
                 "time": "07:23",
                 "deleted": null,
@@ -14208,7 +14208,7 @@
             },
             {
                 "num": "34",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ROBO (Robos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: ROBO (Robos: 1)",
                 "team": "2",
                 "time": "07:28",
                 "deleted": null,
@@ -14286,7 +14286,7 @@
             },
             {
                 "num": "31",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "07:40",
                 "deleted": null,
@@ -14364,7 +14364,7 @@
             },
             {
                 "num": "28",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 1. Faltas de equipo: 1). Tiros libres: 1",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: FALTA Personal (Faltas: 1. Faltas de equipo: 1). Tiros libres: 1",
                 "team": "2",
                 "time": "08:07",
                 "deleted": null,
@@ -14442,7 +14442,7 @@
             },
             {
                 "num": "25",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ASISTENCIA (Asistencias: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ASISTENCIA (Asistencias: 1)",
                 "team": "2",
                 "time": "08:26",
                 "deleted": null,
@@ -14468,7 +14468,7 @@
             },
             {
                 "num": "24",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 2 ANOTADO (Puntos: 2)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: TIRO DE 2 ANOTADO (Puntos: 2)",
                 "team": "2",
                 "time": "08:26",
                 "deleted": null,
@@ -14494,7 +14494,7 @@
             },
             {
                 "num": "23",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: ROBO (Robos: 1)",
                 "team": "2",
                 "time": "08:31",
                 "deleted": null,
@@ -14572,7 +14572,7 @@
             },
             {
                 "num": "20",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 FALLADO",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: TIRO DE 2 FALLADO",
                 "team": "2",
                 "time": "08:47",
                 "deleted": null,
@@ -14676,7 +14676,7 @@
             },
             {
                 "num": "16",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "09:25",
                 "deleted": null,
@@ -14702,7 +14702,7 @@
             },
             {
                 "num": "15",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: REBOTE (Rebotes: 1)",
                 "team": "2",
                 "time": "09:46",
                 "deleted": null,
@@ -14780,7 +14780,7 @@
             },
             {
                 "num": "12",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: PÉRDIDA (Pérdidas: 1)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: PÉRDIDA (Pérdidas: 1)",
                 "team": "2",
                 "time": "09:54",
                 "deleted": null,
@@ -14806,7 +14806,7 @@
             },
             {
                 "num": "11",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) L. TOURE: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -14910,7 +14910,7 @@
             },
             {
                 "num": "7",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DOUMBIA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -14988,7 +14988,7 @@
             },
             {
                 "num": "4",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) T. EZEANATOGU EZEONU: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -15014,7 +15014,7 @@
             },
             {
                 "num": "3",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. VALERIA ALEJANDRA: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -15040,7 +15040,7 @@
             },
             {
                 "num": "2",
-                "text": "(SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
+                "text": "(GRAN CANARIA MASPALOMAS COSTA CANARIA) M. DE LA FUENTE DE LA PUENTE: Sustitución (Entra a pista)",
                 "team": "2",
                 "time": "10:00",
                 "deleted": null,
@@ -15990,7 +15990,7 @@
                     }
                 ],
                 "id": "965322",
-                "name": "SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA",
+                "name": "GRAN CANARIA MASPALOMAS COSTA CANARIA",
                 "logo": "https://imagenes.feb.es/imagen.aspx?i=965322&ti=1",
                 "teamCode": "35000103",
                 "clubCode": "350001"
@@ -17406,7 +17406,7 @@
                     }
                 ],
                 "id": "965322",
-                "name": "SPAR GRAN CANARIA MASPALOMAS COSTA CANARIA",
+                "name": "GRAN CANARIA MASPALOMAS COSTA CANARIA",
                 "logo": "https://imagenes.feb.es/imagen.aspx?i=965322&ti=1",
                 "teamCode": null,
                 "clubCode": null
